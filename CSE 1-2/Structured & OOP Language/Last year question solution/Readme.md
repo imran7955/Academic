@@ -1,1 +1,0 @@
-Question solution of 2021 exam.
