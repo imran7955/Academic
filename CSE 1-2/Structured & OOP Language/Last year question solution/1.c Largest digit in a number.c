@@ -3,7 +3,7 @@
 #include<stdio.h>
 int main()
 {
-	char map[][6] = {"Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"};
+	char map[10][6] = {"Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"};
 	int num,largest = 0;
 
 	printf("Enter an Integer: ");
