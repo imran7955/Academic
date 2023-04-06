@@ -31,16 +31,16 @@ public:
 	}
 	int eldest()
 	{
-		int ans = 0;
-		for(int i = 0; i < cnt; i++)
+		int ans = ages[0];
+		for(int i = 1; i < cnt; i++)
 			if(ages[i] > ans)
 				ans = ages[i];
 		return ans;
 	}
 	int youngest()
 	{
-		int ans = 100000;
-		for(int i = 0; i < cnt; i++)
+		int ans = ages[0];
+		for(int i = 1; i < cnt; i++)
 			if(ages[i] < ans) 
 				ans = ages[i];
 		return ans;
