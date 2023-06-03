@@ -22,4 +22,5 @@
     a) Function overloading
     b) Unary operator (++,--) overloading.
     c) Binary operator (Arithmatic) overloading
+    c) Binary operator overloading With friend function (object + cons)
     d) Binary operator (Relational) overloading
