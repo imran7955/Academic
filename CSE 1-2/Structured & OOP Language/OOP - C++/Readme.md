@@ -15,7 +15,7 @@
     e) Hybrid Inheritance
     f) Constructors behavior in Inheritance
     g) Proper use of constructor in Inheritance
-    h)  Ambiguity in Multiple Inheritance
+    h) Ambiguity in Multiple Inheritance
     i) Diamond problem in Mult-level Inheritance (virtual base class)
 3 - > Polymorphism
 
