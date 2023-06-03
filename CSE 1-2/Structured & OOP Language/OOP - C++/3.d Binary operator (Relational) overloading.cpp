@@ -71,9 +71,9 @@ int main() {
 }
 /* OUTPUT:
         d2 is less than d1
-    d1 is greater than d2
-    d2 is less than or equal to d1
-    d3 is greater than or equal to d1
-    d1 is not equal to d2
-    d1 is equal to d3
+        d1 is greater than d2
+        d2 is less than or equal to d1
+        d3 is greater than or equal to d1
+        d1 is not equal to d2
+        d1 is equal to d3
 */
