@@ -25,4 +25,5 @@
     c) Binary operator overloading With friend function (object + cons)
     d) Binary operator (Relational) overloading
     e) Special operator ([],(),arrow) overloading
-    f)Stream operator (insertion-extraction) overloading
+    f) Stream operator (insertion-extraction) overloading
+    g) new and delete operator overloading (not complete)
