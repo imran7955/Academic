@@ -27,3 +27,4 @@
     e) Special operator ([],(),arrow) overloading
     f) Stream operator (insertion-extraction) overloading
     g) new and delete operator overloading (not complete)
+    h) Virtual function in Inheritance
