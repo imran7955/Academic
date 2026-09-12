@@ -1,0 +1,190 @@
+﻿@model IEnumerable<LmsProject.Web.Models.UserManagementViewModel>
+
+@{
+    ViewData["Title"] = "System Identity Index";
+}
+
+<div class="container mt-4">
+    <div class="card shadow border-0 p-4 mb-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <div>
+                <h3 class="fw-bold m-0 text-dark font-monospace">System Users Directory</h3>
+                <p class="text-muted small m-0">Review, update security clearance profiles, or override authorization passwords for cross-domain platform users.</p>
+            </div>
+        </div>
+
+        <div asp-validation-summary="All" class="text-danger small mb-3"></div>
+
+        <ul class="nav nav-pills mb-4 bg-light p-2 rounded-3 border" id="userRoleTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active fw-bold px-4 rounded-2" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-panel" type="button" role="tab">All Directory</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fw-bold px-4 rounded-2" id="admin-tab" data-bs-toggle="tab" data-bs-target="#admin-panel" type="button" role="tab">👑 Administrators</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fw-bold px-4 rounded-2" id="instructor-tab" data-bs-toggle="tab" data-bs-target="#instructor-panel" type="button" role="tab">🎓 Instructors</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fw-bold px-4 rounded-2" id="student-tab" data-bs-toggle="tab" data-bs-target="#student-panel" type="button" role="tab">👥 General Users</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="userRoleTabsContent">
+
+            <div class="tab-pane fade show active" id="all-panel" role="tabpanel">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-light text-secondary font-monospace small">
+                            <tr>
+                                <th>Account Username / Email Address</th>
+                                <th>Current Active RBAC Role Privilege</th>
+                                <th class="text-end">Administrative Tools</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var user in Model)
+                            {
+                                string badgeColor = user.Role == "Admin" ? "bg-dark text-white" : (user.Role == "Instructor" ? "bg-primary text-white" : "bg-secondary text-white");
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="bg-light rounded-circle p-2 me-3 border text-center font-monospace" style="width: 40px; height: 40px; line-height: 22px;">U</div>
+                                            <div>
+                                                <span class="fw-bold text-dark d-block">@user.Username</span>
+                                                <small class="text-muted font-monospace" style="font-size:0.8rem;">ID: @user.UserId</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="badge @badgeColor fw-semibold px-3 py-2">@user.Role</span>
+                                    </td>
+                                    <td class="text-end">
+                                        <button class="btn btn-sm btn-outline-dark fw-bold px-3 shadow-sm" data-bs-toggle="modal" data-bs-target="#editModal-@user.UserId">
+                                            ⚙ Modify Account
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="admin-panel" role="tabpanel">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-light text-secondary font-monospace small">
+                            <tr>
+                                <th>Account Username / Email Address</th>
+                                <th>Current Active RBAC Role Privilege</th>
+                                <th class="text-end">Administrative Tools</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var user in Model.Where(u => u.Role == "Admin"))
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="bg-light rounded-circle p-2 me-3 border text-center font-monospace" style="width: 40px; height: 40px; line-height: 22px;">U</div>
+                                            <div>
+                                                <span class="fw-bold text-dark d-block">@user.Username</span>
+                                                <small class="text-muted font-monospace" style="font-size:0.8rem;">ID: @user.UserId</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-dark text-white fw-semibold px-3 py-2">@user.Role</span>
+                                    </td>
+                                    <td class="text-end">
+                                        <button class="btn btn-sm btn-outline-dark fw-bold px-3 shadow-sm" data-bs-toggle="modal" data-bs-target="#editModal-@user.UserId">
+                                            ⚙ Modify Account
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="instructor-panel" role="tabpanel">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-light text-secondary font-monospace small">
+                            <tr>
+                                <th>Account Username / Email Address</th>
+                                <th>Current Active RBAC Role Privilege</th>
+                                <th class="text-end">Administrative Tools</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var user in Model.Where(u => u.Role == "Instructor"))
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="bg-light rounded-circle p-2 me-3 border text-center font-monospace" style="width: 40px; height: 40px; line-height: 22px;">U</div>
+                                            <div>
+                                                <span class="fw-bold text-dark d-block">@user.Username</span>
+                                                <small class="text-muted font-monospace" style="font-size:0.8rem;">ID: @user.UserId</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-primary text-white fw-semibold px-3 py-2">@user.Role</span>
+                                    </td>
+                                    <td class="text-end">
+                                        <button class="btn btn-sm btn-outline-dark fw-bold px-3 shadow-sm" data-bs-toggle="modal" data-bs-target="#editModal-@user.UserId">
+                                            ⚙ Modify Account
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="student-panel" role="tabpanel">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-light text-secondary font-monospace small">
+                            <tr>
+                                <th>Account Username / Email Address</th>
+                                <th>Current Active RBAC Role Privilege</th>
+                                <th class="text-end">Administrative Tools</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var user in Model.Where(u => u.Role != "Admin" && u.Role != "Instructor"))
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="bg-light rounded-circle p-2 me-3 border text-center font-monospace" style="width: 40px; height: 40px; line-height: 22px;">U</div>
+                                            <div>
+                                                <span class="fw-bold text-dark d-block">@user.Username</span>
+                                                <small class="text-muted font-monospace" style="font-size:0.8rem;">ID: @user.UserId</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-secondary text-white fw-semibold px-3 py-2">@user.Role</span>
+                                    </td>
+                                    <td class="text-end">
+                                        <button class="btn btn-sm btn-outline-dark fw-bold px-3 shadow-sm" data-bs-toggle="modal" data-bs-target="#editModal-@user.UserId">
+                                            ⚙ Modify Account
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

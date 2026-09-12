@@ -1,0 +1,144 @@
+﻿@model LmsProject.Web.Models.CourseViewModel
+
+@{
+    ViewData["Title"] = "Available Courses";
+}
+<style>
+    .course-item-card {
+        cursor: pointer;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        background-color: #ffffff;
+    }
+
+        .course-item-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            border-color: #cbd5e1;
+        }
+
+    .description-truncated {
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        line-height: 1.5;
+        font-size: 0.875rem;
+        white-space: pre-line;
+    }
+
+    .more-link-accent {
+        color: #0d6efd;
+        font-weight: 600;
+        font-size: 0.85rem;
+        text-decoration: none;
+    }
+
+        .more-link-accent:hover {
+            text-decoration: underline;
+        }
+</style>
+
+<div class="container-fluid px-4">
+    <h3 class="mb-4 text-dark fw-bold font-monospace">Available Courses</h3>
+
+    <form method="get" action="@Url.Action("ViewCourses", "Course")" class="row g-3 align-items-center bg-white p-3 rounded border shadow-sm mb-4">
+        <div class="col-md-4">
+            <label class="form-label fw-bold text-muted small mb-1">Course Domain</label>
+            <select name="domain" class="form-select" onchange="this.form.submit()">
+                <option value="All" selected="@(Model.SelectedDomain == "All" ? "selected" : null)">All Domains</option>
+                @foreach (var domain in Model.Domains)
+                {
+                    <option value="@domain" selected="@(Model.SelectedDomain == domain ? "selected" : null)">@domain</option>
+                }
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label fw-bold text-muted small mb-1">Filter Instructor</label>
+            <select name="instructor" class="form-select" onchange="this.form.submit()">
+                <option value="All" selected="@(Model.SelectedInstructor == "All" ? "selected" : null)">All Instructors</option>
+                @foreach (var inst in Model.Instructors)
+                {
+                    <option value="@inst.Name" selected="@(Model.SelectedInstructor == inst.Name ? "selected" : null)">@inst.Name</option>
+                }
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label fw-bold text-muted small mb-1">Search Instructor Name</label>
+            <div class="input-group">
+                <input type="text" name="search" class="form-control" placeholder="Search name..." value="@Model.SearchTerm" />
+                <button type="submit" class="btn btn-dark">Search</button>
+            </div>
+        </div>
+    </form>
+
+    @if (!Model.Courses.Any())
+    {
+        <div class="alert alert-secondary text-center py-5">No tracks or active courses match your chosen filter fields.</div>
+    }
+    else
+    {
+        <div class="row g-4">
+            @foreach (var course in Model.Courses)
+            {
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- CHANGED: Moved p-4 class to inner body so image can reach edges -->
+                    <div class="card h-100 course-item-card shadow-sm d-flex flex-column overflow-hidden"
+                         onclick="location.href='@Url.Action("Details", "Course", new { id = course.Id })'">
+
+                        <!-- ADDED: Display Thumbnail Image -->
+                        @if (!string.IsNullOrEmpty(course.ImageUrl))
+                        {
+                            <img src="@course.ImageUrl" class="w-100" style="height: 180px; object-fit: cover;" alt="@course.Title" />
+                        }
+                        else
+                        {
+                            <div class="w-100 bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center border-bottom" style="height: 180px;">
+                                <span class="text-muted small font-monospace">📸 No Cover Image</span>
+                            </div>
+                        }
+
+                        <div class="card-body p-4 d-flex flex-column h-100">
+                            <div class="text-uppercase tracking-wider font-monospace text-primary fw-bold mb-2" style="font-size: 0.75rem;">
+                                ■ @course.Domain
+                            </div>
+
+                            <h5 class="card-title text-dark fw-bold mb-3">@course.Title</h5>
+
+                            @if (!string.IsNullOrEmpty(course.Description))
+                            {
+                                <div class="text-muted mb-2 description-truncated">
+                                    @course.Description
+                                </div>
+                                <div class="mb-3">
+                                    <span class="more-link-accent">... More</span>
+                                </div>
+                            }
+                            else
+                            {
+                                <p class="text-muted opacity-50 small mb-4 font-monospace" style="font-size: 0.75rem; font-style: italic;">No course overview details added yet.</p>
+                            }
+
+                            <div class="mt-auto pt-3 border-top">
+                                <span class="text-muted d-block small mb-1 fw-semibold">Instructors:</span>
+                                @foreach (var inst in course.Instructors)
+                                {
+                                    <a href="@Url.Action("ViewCourses", "Course", new { instructor = inst.Name, domain = "All" })"
+                                       target="_blank"
+                                       class="btn btn-sm btn-light border text-dark me-1 my-1 px-2 py-0 fw-medium"
+                                       style="font-size: 0.8rem; transition: background-color 0.2s;"
+                                       onclick="event.stopPropagation();">
+                                        👤 @inst.Name
+                                    </a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

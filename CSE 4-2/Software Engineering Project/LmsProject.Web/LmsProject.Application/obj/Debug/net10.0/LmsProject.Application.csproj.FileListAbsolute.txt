@@ -1,0 +1,16 @@
+C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Application\bin\Debug\net10.0\LmsProject.Application.deps.json
+C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Application\bin\Debug\net10.0\LmsProject.Application.dll
+C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Application\bin\Debug\net10.0\LmsProject.Application.pdb
+C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Application\bin\Debug\net10.0\LmsProject.Domain.dll
+C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Application\bin\Debug\net10.0\LmsProject.Domain.pdb
+C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Application\obj\Debug\net10.0\LmsProject.Application.csproj.AssemblyReference.cache
+C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Application\obj\Debug\net10.0\LmsProject.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Application\obj\Debug\net10.0\LmsProject.Application.AssemblyInfoInputs.cache
+C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Application\obj\Debug\net10.0\LmsProject.Application.AssemblyInfo.cs
+C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Application\obj\Debug\net10.0\LmsProject.Application.csproj.CoreCompileInputs.cache
+C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Application\obj\Debug\net10.0\LmsProject.Application.sourcelink.json
+C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Application\obj\Debug\net10.0\LmsProje.59AF48BA.Up2Date
+C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Application\obj\Debug\net10.0\LmsProject.Application.dll
+C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Application\obj\Debug\net10.0\refint\LmsProject.Application.dll
+C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Application\obj\Debug\net10.0\LmsProject.Application.pdb
+C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Application\obj\Debug\net10.0\ref\LmsProject.Application.dll

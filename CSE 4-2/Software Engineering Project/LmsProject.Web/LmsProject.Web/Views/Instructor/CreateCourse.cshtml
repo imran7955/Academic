@@ -1,0 +1,167 @@
+﻿@model LmsProject.Domain.Entities.Course
+
+@{
+    ViewData["Title"] = "Create Course";
+    var domains = ViewBag.Domains as List<string> ?? new List<string>();
+    var instructors = ViewBag.Instructors as List<LmsProject.Domain.Entities.Instructor> ?? new List<LmsProject.Domain.Entities.Instructor>();
+}
+
+<div class="container" style="max-width: 700px;">
+    <div class="card shadow-sm border mt-4">
+        <div class="card-header bg-dark text-white p-3">
+            <h5 class="mb-0 fw-bold font-monospace">Setup New Learning Course</h5>
+        </div>
+        <div class="card-body p-4">
+            <!-- ADDED: enctype="multipart/form-data" for image uploads -->
+            <form method="post" action="@Url.Action("CreateCourse", "Instructor")" onsubmit="prepareDomainPayload()" enctype="multipart/form-data">
+                @Html.AntiForgeryToken()
+
+                <input type="hidden" id="finalDomainValue" name="Domain" required />
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold text-secondary">Course Title</label>
+                    <input type="text" name="Title" class="form-control" placeholder="e.g. Advanced Graph Structures" required />
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label fw-bold text-secondary">Course Domain</label>
+
+                    @if (!domains.Any())
+                    {
+                        <div class="p-3 border rounded bg-light mb-2">
+                            <small class="text-muted d-block mb-2">💡 There are no pre-existing domain options inside the database yet. Type a name below to create the first one!</small>
+                            <input type="text" id="customDomainInput" class="form-control" placeholder="e.g. Computer Science, Mathematics" required />
+                        </div>
+                    }
+                    else
+                    {
+                        <select id="domainSelectDropdown" class="form-select" onchange="toggleDomainInputFields()">
+                            <option value="" disabled selected>-- Select Domain Category --</option>
+                            @foreach (var domain in domains)
+                            {
+                                <option value="@domain">@domain</option>
+                            }
+                            <option value="__CUSTOM__">➕ [Add Custom New Domain...]</option>
+                        </select>
+
+                        <div id="customDomainInputWrapper" class="mt-2 p-3 border rounded bg-light" style="display: none;">
+                            <label class="form-label small fw-bold text-dark">New Domain Title</label>
+                            <input type="text" id="customDomainInput" class="form-control" placeholder="Type new domain name here..." />
+                        </div>
+                    }
+                </div>
+
+                <!-- ADDED: Course Thumbnail Upload Field -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold text-secondary">Course Thumbnail Image</label>
+                    <input type="file" name="imageFile" id="imageFile" class="form-control" accept="image/*" />
+                    <small class="text-muted d-block mt-1">Upload a cover image for this course (optional).</small>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label fw-bold text-secondary">Course Description</label>
+                    <textarea name="Description" class="form-control" rows="3" placeholder="Enter description detailing what students will learn..."></textarea>
+                </div>
+
+                <div class="mb-4 p-3 bg-light rounded border">
+                    <label class="form-label fw-bold text-dark d-block mb-1">Assign Instructors</label>
+                    <small class="text-muted d-block mb-3">(Search and select all faculty that apply to this track)</small>
+
+                    @if (!instructors.Any())
+                    {
+                        <div class="text-danger small">⚠️ No faculty found. Please register an instructor on the main dashboard sidebar first.</div>
+                    }
+                    else
+                    {
+                        <div class="input-group input-group-sm mb-3 shadow-sm">
+                            <span class="input-group-text bg-white border-end-0 text-muted">🔍</span>
+                            <input type="text" id="instructorSearchBox" class="form-control border-start-0 ps-0" placeholder="Type name to filter instructors instantly..." onkeyup="filterInstructorCheckboxes()" />
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-sm-2 g-2" id="instructorChecklistGrid" style="max-height: 160px; overflow-y: auto; padding-right: 4px;">
+                            @foreach (var inst in instructors)
+                            {
+                                <div class="col instructor-row-item" data-name="@inst.Name.ToLower()">
+                                    <div class="form-check p-2 border rounded bg-white h-100 transition-all custom-check-card">
+                                        <input class="form-check-input ms-1 me-2 mt-1" type="checkbox" name="selectedInstructors" value="@inst.Id" id="inst_@inst.Id">
+                                        <label class="form-check-label small text-dark streaming-truncation-target ps-1" for="inst_@inst.Id" style="cursor: pointer;">
+                                            👤 @inst.Name
+                                        </label>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+
+                <div class="d-flex gap-2">
+                    <button type="submit" class="btn btn-primary px-4 fw-bold">Publish Course</button>
+                    <a href="@Url.Action("Dashboard", "Instructor")" class="btn btn-outline-secondary px-4">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDomainInputFields() {
+        const dropdown = document.getElementById('domainSelectDropdown');
+        const customWrapper = document.getElementById('customDomainInputWrapper');
+        const customInput = document.getElementById('customDomainInput');
+
+        if (dropdown && dropdown.value === '__CUSTOM__') {
+            customWrapper.style.display = "block";
+            customInput.setAttribute('required', 'required');
+            customInput.focus();
+        } else {
+            if (customWrapper) customWrapper.style.display = "none";
+            if (customInput) customInput.removeAttribute('required');
+        }
+    }
+
+    function prepareDomainPayload() {
+        const dropdown = document.getElementById('domainSelectDropdown');
+        const customInput = document.getElementById('customDomainInput');
+        const hiddenOutput = document.getElementById('finalDomainValue');
+
+        if (!dropdown || dropdown.value === '__CUSTOM__') {
+            hiddenOutput.value = customInput.value.trim();
+        } else {
+            hiddenOutput.value = dropdown.value;
+        }
+    }
+
+    function filterInstructorCheckboxes() {
+        const input = document.getElementById('instructorSearchBox').value.toLowerCase();
+        const rows = document.getElementsByClassName('instructor-row-item');
+
+        for (let i = 0; i < rows.length; i++) {
+            const nameAttr = rows[i].getAttribute('data-name');
+            if (nameAttr.includes(input)) {
+                rows[i].style.display = "";
+            } else {
+                rows[i].style.display = "none";
+            }
+        }
+    }
+</script>
+
+<style>
+    .custom-check-card {
+        transition: border-color 0.2s, background-color 0.2s;
+    }
+
+        .custom-check-card:hover {
+            border-color: #0d6efd !important;
+            background-color: #f8fafc !important;
+        }
+
+    .streaming-truncation-target {
+        display: inline-block;
+        max-width: 90%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: middle;
+    }
+</style>

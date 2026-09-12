@@ -1,0 +1,237 @@
+﻿@model LmsProject.Domain.Entities.Course
+
+@{
+    ViewData["Title"] = Model?.Title ?? "Course Details Overview";
+
+    var checkInstructors = Model?.Instructors != null
+        ? Model.Instructors.ToList()
+        : new System.Collections.Generic.List<LmsProject.Domain.Entities.Instructor>();
+
+    var checkMaterials = Model?.CourseMaterials != null
+            ? Model.CourseMaterials.ToList()
+            : new System.Collections.Generic.List<LmsProject.Domain.Entities.CourseMaterial>();
+}
+
+<style>
+    .details-container {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .back-btn {
+        transition: transform 0.2s;
+    }
+
+        .back-btn:hover {
+            transform: translateX(-3px);
+        }
+
+    .sticky-syllabus-pane {
+        position: sticky;
+        top: 95px;
+        max-height: calc(100vh - 140px);
+        overflow-y: auto;
+    }
+
+    .material-lesson-card {
+        transition: background-color 0.2s, border-color 0.2s;
+        border: 1px solid #e2e8f0;
+    }
+
+        .material-lesson-card:hover {
+            background-color: #f8fafc;
+            border-color: #cbd5e1;
+        }
+
+    .video-thumbnail-box {
+        width: 120px;
+        height: 68px;
+        background-color: #000000;
+        border-radius: 6px;
+        overflow: hidden;
+        position: relative;
+        flex-shrink: 0;
+    }
+
+        .video-thumbnail-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.85;
+            transition: opacity 0.2s;
+        }
+
+    .material-lesson-card:hover .video-thumbnail-box img {
+        opacity: 1;
+    }
+
+    .play-overlay-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(220, 53, 69, 0.9);
+        color: #ffffff;
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.75rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .instructor-filter-link {
+        transition: background-color 0.2s, transform 0.2s, border-color 0.2s;
+        text-decoration: none;
+    }
+
+        .instructor-filter-link:hover {
+            background-color: #e2e8f0 !important;
+            border-color: #94a3b8 !important;
+            transform: translateY(-1px);
+        }
+</style>
+
+@functions {
+    public string GetYouTubeVideoId(string url)
+    {
+        if (string.IsNullOrEmpty(url)) return string.Empty;
+
+        if (url.Contains("v="))
+        {
+            var parts = url.Split(new[] { "v=" }, StringSplitOptions.None);
+            if (parts.Length > 1)
+            {
+                var idPart = parts[1];
+                int ampIndex = idPart.IndexOf("&");
+                return ampIndex != -1 ? idPart.Substring(0, ampIndex) : idPart;
+            }
+        }
+        if (url.Contains("youtu.be/"))
+        {
+            var parts = url.Split(new[] { "youtu.be/" }, StringSplitOptions.None);
+            if (parts.Length > 1)
+            {
+                var idPart = parts[1];
+                int qIndex = idPart.IndexOf("?");
+                return qIndex != -1 ? idPart.Substring(0, qIndex) : idPart;
+            }
+        }
+        return string.Empty;
+    }
+}
+
+<div class="container details-container px-4">
+    <div class="mb-4">
+        <a href="@Url.Action("ViewCourses", "Course")" class="text-decoration-none text-muted small fw-bold d-inline-flex align-items-center back-btn">
+            ← Back to Course Catalog
+        </a>
+    </div>
+
+    <div class="row g-5">
+        <div class="col-lg-7">
+            <div class="text-uppercase font-monospace text-primary fw-bold mb-2" style="font-size: 0.8rem; letter-spacing: 0.5px;">
+                ■ @(string.IsNullOrEmpty(Model?.Domain) ? "General" : Model.Domain) Track
+            </div>
+
+            <h1 class="text-dark mb-4" style="font-size: 2.25rem; font-weight: 800;">@(Model?.Title ?? "Untitled Course")</h1>
+
+            <!-- ADDED: Display Large Cover Image for Course -->
+            @if (!string.IsNullOrEmpty(Model?.ImageUrl))
+            {
+                <div class="mb-4 rounded-4 overflow-hidden shadow-sm" style="height: 350px;">
+                    <img src="@Model.ImageUrl" alt="@Model.Title" class="w-100 h-100" style="object-fit: cover;" />
+                </div>
+            }
+
+            <div class="mb-4 pb-3 border-bottom d-flex flex-wrap align-items-center gap-2">
+                <span class="text-muted small fw-semibold me-2">Lead Lecturers:</span>
+                @if (!checkInstructors.Any())
+                {
+                    <span class="text-muted font-monospace small italic">No faculty instructors assigned to track.</span>
+                }
+                else
+                {
+                    @foreach (var inst in checkInstructors)
+                    {
+                        if (inst != null)
+                        {
+                            <a href="@Url.Action("ViewCourses", "Course", new { instructor = inst.Name, domain = "All" })"
+                               target="_blank"
+                               class="badge bg-white border text-dark p-2 px-3 rounded-pill shadow-sm instructor-filter-link"
+                               style="font-size: 0.85rem; font-weight: 500;">
+                                👤 @inst.Name
+                            </a>
+                        }
+                    }
+                }
+            </div>
+
+            <h5 class="text-dark fw-bold mb-3 font-monospace">Course Overview & Curriculum Details</h5>
+            <div class="text-secondary p-1" style="white-space: pre-line; line-height: 1.7; font-size: 1.05rem;">
+                @if (Model != null && !string.IsNullOrEmpty(Model.Description))
+                {
+                    @Model.Description
+                }
+                else
+                {
+                    <span class="text-muted opacity-50 font-monospace small italic">No extensive framework overview details mapped out yet for this domain path.</span>
+                }
+            </div>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="card shadow-sm border p-4 bg-white sticky-syllabus-pane">
+                <h5 class="fw-bold text-dark mb-1 font-monospace">Syllabus Track Flow</h5>
+                <p class="text-muted small fw-semibold pb-3 border-bottom mb-3">Structured Video Sequence</p>
+
+                @if (!checkMaterials.Any())
+                {
+                    <div class="alert alert-warning text-center py-4 small text-dark mb-0">
+                        No instructional video material components mapped into this learning track schedule yet.
+                    </div>
+                }
+                else
+                {
+                    <div class="d-flex flex-column gap-3">
+                        @foreach (var cm in checkMaterials.OrderBy(m => m.Position))
+                        {
+                            if (cm?.Material != null)
+                            {
+                                var videoId = GetYouTubeVideoId(cm.Material.YouTubeLink);
+                                var thumbnailUrl = !string.IsNullOrEmpty(videoId)
+                                    ? $"https://img.youtube.com/vi/{videoId}/mqdefault.jpg"
+                                    : "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=120&auto=format&fit=crop&q=60";
+
+                                <div class="card p-2 rounded-3 material-lesson-card">
+                                    <div class="d-flex gap-3 align-items-center">
+
+                                        <a href="@cm.Material.YouTubeLink" target="_blank" class="video-thumbnail-box text-decoration-none">
+                                            <img src="@thumbnailUrl" alt="Video cover frame pointer" />
+                                            <div class="play-overlay-icon">▶</div>
+                                        </a>
+
+                                        <div class="overflow-hidden">
+                                            <div class="d-flex align-items-center gap-2 mb-1">
+                                                <span class="badge bg-dark rounded-pill font-monospace" style="font-size: 0.65rem;">STEP #@cm.Position</span>
+                                            </div>
+                                            <h6 class="mb-0 text-dark fw-bold text-truncate" style="font-size: 0.9rem;" title="@cm.Material.Title">
+                                                @cm.Material.Title
+                                            </h6>
+                                            <a href="@cm.Material.YouTubeLink" target="_blank" class="text-danger small text-decoration-none d-inline-block mt-1 fw-semibold" style="font-size: 0.75rem;">
+                                                Open in YouTube ↗
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

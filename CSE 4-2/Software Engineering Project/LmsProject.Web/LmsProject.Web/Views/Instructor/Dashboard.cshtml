@@ -1,0 +1,79 @@
+﻿@model LmsProject.Web.Models.CourseViewModel
+
+@{
+    ViewData["Title"] = "Instructor Dashboard";
+}
+
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+        <h2 class="text-dark fw-bold font-monospace">Instructor Management Hub</h2>
+        <a href="@Url.Action("CreateCourse", "Instructor")" class="btn btn-primary fw-bold">+ Create New Course</a>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card shadow-sm border">
+                <div class="card-header bg-light fw-bold text-secondary">
+                    @(User.IsInRole("Admin") ? "Active Academic Courses (Global Index)" : "My Assigned Active Courses")
+                </div>
+                <div class="card-body p-0">
+                    @if (!Model.Courses.Any())
+                    {
+                        <div class="text-center py-5 text-muted">
+                            <p class="mb-0">No courses live in the database yet.</p>
+                            <small>Click the "Create New Course" button at the top right to start.</small>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle mb-0">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Course Title</th>
+                                        <th>Domain</th>
+                                        <th>Instructors Mapped</th>
+                                        <th class="text-center">Syllabus Count</th>
+                                        <th class="text-center">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var course in Model.Courses)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <strong class="text-dark d-block">@course.Title</strong>
+                                                @if (!string.IsNullOrEmpty(course.Description))
+                                                {
+                                                    <small class="text-muted d-block text-truncate" style="max-width: 320px;" title="@course.Description">
+                                                        @course.Description
+                                                    </small>
+                                                }
+                                                else
+                                                {
+                                                    <small class="text-muted opacity-50 d-block italic font-monospace" style="font-size: 0.75rem;">No description added.</small>
+                                                }
+                                            </td>
+                                            <td><span class="badge bg-secondary opacity-75">@course.Domain</span></td>
+                                            <td>
+                                                @string.Join(", ", course.Instructors.Select(i => i.Name))
+                                            </td>
+                                            <td class="text-center fw-bold text-primary">
+                                                @(course.CourseMaterials != null ? course.CourseMaterials.Count : 0)
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="@Url.Action("EditCourse", "Instructor", new { id = course.Id })" class="btn btn-sm btn-outline-primary fw-bold">
+                                                    ⚙ Edit Course
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+﻿@model LmsProject.Web.Models.RegisterViewModel
+
+<div class="container mt-5" style="max-width: 450px;">
+    <div class="card shadow border-0 p-4">
+        <h3 class="text-center fw-bold mb-4">Create Account</h3>
+        <form asp-action="Register" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger small mb-3"></div>
+
+            <div class="mb-3">
+                <label class="form-label font-monospace small">Full Name</label>
+                <input asp-for="Name" class="form-control" placeholder="John Doe" />
+                <span asp-validation-for="Name" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label font-monospace small">Email Address</label>
+                <input asp-for="Email" class="form-control" placeholder="name@example.com" />
+                <span asp-validation-for="Email" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label font-monospace small">Select Account Profile Type</label>
+                <select asp-for="SelectedRole" class="form-select">
+                    <option value="">-- Select Your Role --</option>
+                    <option value="Student">Student (Browse & Learn)</option>
+                    <option value="Instructor">Instructor (Manage Courses)</option>
+                </select>
+                <span asp-validation-for="SelectedRole" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label font-monospace small">Password</label>
+                <input asp-for="Password" class="form-control" type="password" />
+                <span asp-validation-for="Password" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label font-monospace small">Confirm Password</label>
+                <input asp-for="ConfirmPassword" class="form-control" type="password" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger small"></span>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100 fw-bold py-2 shadow-sm">Register</button>
+        </form>
+        <div class="text-center mt-3">
+            <a href="@Url.Action("Login", "Account")" class="small text-decoration-none text-muted">Already have an account? Sign in</a>
+        </div>
+    </div>
+</div>
