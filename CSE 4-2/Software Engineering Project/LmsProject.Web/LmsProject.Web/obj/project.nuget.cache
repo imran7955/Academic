@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pteYtqcoI+w=",
+  "dgSpecHash": "8O6B9xRLsfo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Web\\LmsProject.Web.csproj",
+  "projectFilePath": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\LmsProject.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\IMRAN\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\IMRAN\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

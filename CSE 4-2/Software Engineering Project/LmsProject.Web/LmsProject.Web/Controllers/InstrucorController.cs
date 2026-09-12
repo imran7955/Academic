@@ -8,10 +8,10 @@ using System.Security.Claims;
 using LmsProject.Application.Services;
 using LmsProject.Domain.Entities;
 using LmsProject.Web.Models;
-using Microsoft.AspNetCore.Hosting; // Added for file uploads
-using Microsoft.AspNetCore.Http;    // Added for file uploads
-using System.IO;                    // Added for file uploads
-using System;                       // Added for Guid
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using System.IO;
+using System;
 
 namespace LmsProject.Web.Controllers
 {
@@ -21,7 +21,7 @@ namespace LmsProject.Web.Controllers
         private readonly IInstructorService _instructorService;
         private readonly ICourseService _courseService;
         private readonly UserManager<IdentityUser> _userManager;
-        private readonly IWebHostEnvironment _webHostEnvironment; // Added for wwwroot path access
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
         public InstructorController(
             IInstructorService instructorService,
@@ -60,7 +60,8 @@ namespace LmsProject.Web.Controllers
         // GET: Instructor/Dashboard
         public async Task<IActionResult> Dashboard()
         {
-            var courses = await _courseService.GetFilteredCoursesAsync("All", "All", "");
+            // Updated to match the new 5-parameter signature
+            var courses = await _courseService.GetFilteredCoursesAsync("N/A", "All", "All", "", null);
             var instructors = await _instructorService.GetAllInstructorsAsync();
 
             var courseList = courses.ToList();
@@ -76,6 +77,7 @@ namespace LmsProject.Web.Controllers
                 Courses = courseList,
                 Instructors = instructors.ToList(),
                 Domains = (await _courseService.GetFilterDomainsAsync()).ToList(),
+                SelectedEnrollment = "N/A",
                 SelectedDomain = "All",
                 SelectedInstructor = "All",
                 SearchTerm = string.Empty
@@ -124,7 +126,7 @@ namespace LmsProject.Web.Controllers
 
         private async Task<IActionResult> ReloadDashboardViewWithErrors()
         {
-            var courses = await _courseService.GetFilteredCoursesAsync("All", "All", "");
+            var courses = await _courseService.GetFilteredCoursesAsync("N/A", "All", "All", "", null);
             var instructors = await _instructorService.GetAllInstructorsAsync();
 
             var model = new CourseViewModel
@@ -132,6 +134,7 @@ namespace LmsProject.Web.Controllers
                 Courses = courses.ToList(),
                 Instructors = instructors.ToList(),
                 Domains = (await _courseService.GetFilterDomainsAsync()).ToList(),
+                SelectedEnrollment = "N/A",
                 SelectedDomain = "All",
                 SelectedInstructor = "All",
                 SearchTerm = string.Empty
@@ -154,7 +157,7 @@ namespace LmsProject.Web.Controllers
         // POST: Instructor/CreateCourse
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateCourse(string title, string domain, string description, List<int> selectedInstructors, IFormFile? imageFile)
+        public async Task<IActionResult> CreateCourse(string title, string domain, string description, List<int> selectedInstructors, IFormFile? imageFile, DateTime enrollmentStartDate, DateTime enrollmentDeadline)
         {
             if (!string.IsNullOrEmpty(title) && !string.IsNullOrEmpty(domain))
             {
@@ -163,8 +166,8 @@ namespace LmsProject.Web.Controllers
                 // Process the uploaded image
                 string? imageUrl = await ProcessUploadedFile(imageFile);
 
-                // Pass the imageUrl to the updated service method
-                await _instructorService.RegisterCourseAsync(title, domain, description, instructorIds, imageUrl);
+                // Pass the imageUrl and Dates to the updated service method
+                await _instructorService.RegisterCourseAsync(title, domain, description, instructorIds, imageUrl, enrollmentStartDate, enrollmentDeadline);
                 return RedirectToAction(nameof(Dashboard));
             }
 
@@ -200,7 +203,7 @@ namespace LmsProject.Web.Controllers
         // POST: Instructor/EditCourse/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EditCourse(int id, string title, string domain, string description, List<int> selectedInstructors, IFormFile? imageFile)
+        public async Task<IActionResult> EditCourse(int id, string title, string domain, string description, List<int> selectedInstructors, IFormFile? imageFile, DateTime enrollmentStartDate, DateTime enrollmentDeadline)
         {
             if (id <= 0)
             {
@@ -228,8 +231,8 @@ namespace LmsProject.Web.Controllers
                     imageUrl = await ProcessUploadedFile(imageFile);
                 }
 
-                // Pass the imageUrl to the updated service method
-                await _instructorService.UpdateCourseDetailsAsync(id, title, domain, description, instructorIds, imageUrl);
+                // Pass the imageUrl and Dates to the updated service method
+                await _instructorService.UpdateCourseDetailsAsync(id, title, domain, description, instructorIds, imageUrl, enrollmentStartDate, enrollmentDeadline);
 
                 return RedirectToAction(nameof(Dashboard));
             }

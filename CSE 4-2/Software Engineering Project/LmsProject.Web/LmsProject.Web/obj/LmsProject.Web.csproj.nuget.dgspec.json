@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Web\\LmsProject.Web.csproj": {}
+    "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\LmsProject.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Application\\LmsProject.Application.csproj": {
+    "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\LmsProject.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Application\\LmsProject.Application.csproj",
+        "projectUniqueName": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\LmsProject.Application.csproj",
         "projectName": "LmsProject.Application",
-        "projectPath": "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Application\\LmsProject.Application.csproj",
+        "projectPath": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\LmsProject.Application.csproj",
         "packagesPath": "C:\\Users\\IMRAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Application\\obj\\",
+        "outputPath": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Domain\\LmsProject.Domain.csproj": {
-                "projectPath": "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Domain\\LmsProject.Domain.csproj"
+              "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\LmsProject.Domain.csproj": {
+                "projectPath": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\LmsProject.Domain.csproj"
               }
             }
           }
@@ -349,14 +349,14 @@
         }
       }
     },
-    "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Domain\\LmsProject.Domain.csproj": {
+    "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\LmsProject.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Domain\\LmsProject.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\LmsProject.Domain.csproj",
         "projectName": "LmsProject.Domain",
-        "projectPath": "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Domain\\LmsProject.Domain.csproj",
+        "projectPath": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\LmsProject.Domain.csproj",
         "packagesPath": "C:\\Users\\IMRAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Domain\\obj\\",
+        "outputPath": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -690,14 +690,14 @@
         }
       }
     },
-    "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj": {
+    "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj",
         "projectName": "LmsProject.Infrastructure",
-        "projectPath": "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\IMRAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -719,11 +719,11 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Application\\LmsProject.Application.csproj": {
-                "projectPath": "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Application\\LmsProject.Application.csproj"
+              "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\LmsProject.Application.csproj": {
+                "projectPath": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\LmsProject.Application.csproj"
               },
-              "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Domain\\LmsProject.Domain.csproj": {
-                "projectPath": "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Domain\\LmsProject.Domain.csproj"
+              "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\LmsProject.Domain.csproj": {
+                "projectPath": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\LmsProject.Domain.csproj"
               }
             }
           }
@@ -1058,14 +1058,14 @@
         }
       }
     },
-    "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Web\\LmsProject.Web.csproj": {
+    "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\LmsProject.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Web\\LmsProject.Web.csproj",
+        "projectUniqueName": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\LmsProject.Web.csproj",
         "projectName": "LmsProject.Web",
-        "projectPath": "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Web\\LmsProject.Web.csproj",
+        "projectPath": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\LmsProject.Web.csproj",
         "packagesPath": "C:\\Users\\IMRAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Web\\obj\\",
+        "outputPath": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1087,14 +1087,14 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Application\\LmsProject.Application.csproj": {
-                "projectPath": "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Application\\LmsProject.Application.csproj"
+              "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\LmsProject.Application.csproj": {
+                "projectPath": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\LmsProject.Application.csproj"
               },
-              "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Domain\\LmsProject.Domain.csproj": {
-                "projectPath": "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Domain\\LmsProject.Domain.csproj"
+              "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\LmsProject.Domain.csproj": {
+                "projectPath": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\LmsProject.Domain.csproj"
               },
-              "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\IMRAN\\Music\\New folder\\bs23attachment\\LMS\\LmsProject.Web\\LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj"
+              "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj"
               }
             }
           }

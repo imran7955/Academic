@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\LmsProject.Infrastructure\\Persitence",
+    "\\LmsProject.Infrastructure\\Persitence\\Migrations",
+    "\\LmsProject.Web",
+    "\\LmsProject.Web\\Views",
+    "\\LmsProject.Web\\Views\\Course",
+    "\\LmsProject.Web\\Views\\Instructor"
+  ],
+  "PreviewInSolutionExplorer": false
+}

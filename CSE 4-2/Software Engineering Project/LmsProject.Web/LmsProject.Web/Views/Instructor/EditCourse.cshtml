@@ -98,7 +98,6 @@
         <div class="tab-pane fade show active" id="metaPanelZone" role="tabpanel">
             <div class="card border shadow-sm rounded-3">
                 <div class="card-body p-4">
-                    <!-- ADDED: enctype="multipart/form-data" for image uploads -->
                     <form id="courseMetadataForm" method="post" action="@Url.Action("EditCourse", "Instructor", new { id = Model.Id })" onsubmit="return prepareEditDomainPayload(event)" enctype="multipart/form-data">
                         @Html.AntiForgeryToken()
 
@@ -143,7 +142,6 @@
                             }
                         </div>
 
-                        <!-- ADDED: Course Thumbnail Update Field with Preview -->
                         <div class="mb-4 border rounded p-3 bg-light">
                             <label class="form-label small fw-bold text-secondary">Course Thumbnail Image</label>
                             <input type="file" name="imageFile" id="imageFile" class="form-control shadow-sm mb-2" accept="image/*" />
@@ -162,6 +160,19 @@
                             {
                                 <small class="text-muted d-block mt-1">No cover image currently assigned. Upload one to set a thumbnail.</small>
                             }
+                        </div>
+
+                        <!-- ADDED: Enrollment Dates (Bound to Model for editing) -->
+                        <div class="row mb-4 p-3 bg-light rounded border border-secondary border-opacity-25 shadow-sm">
+                            <h6 class="fw-bold text-dark mb-3 small text-uppercase">Enrollment Scheduling (UTC)</h6>
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <label class="form-label fw-bold text-secondary small">Start Date & Time</label>
+                                <input type="datetime-local" name="enrollmentStartDate" value="@Model.EnrollmentStartDate.ToString("yyyy-MM-ddTHH:mm")" class="form-control shadow-sm" required />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold text-secondary small">Deadline Date & Time</label>
+                                <input type="datetime-local" name="enrollmentDeadline" value="@Model.EnrollmentDeadline.ToString("yyyy-MM-ddTHH:mm")" class="form-control shadow-sm" required />
+                            </div>
                         </div>
 
                         <div class="mb-4">
@@ -343,7 +354,6 @@
         renderStagingQueueView();
     }
 
-    /* DRAG AND DROP HANDLERS */
     function handleDragStart(ev, index) { currentlyDraggedIndex = index; ev.dataTransfer.effectAllowed = "move"; }
     function handleDragOver(ev, el) { ev.preventDefault(); el.classList.add('drag-over-active'); }
     function handleDragLeave(el) { el.classList.remove('drag-over-active'); }

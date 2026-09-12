@@ -37,6 +37,21 @@ namespace LmsProject.Infrastructure.Persitence.Migrations
                     b.ToTable("CourseInstructor");
                 });
 
+            modelBuilder.Entity("CourseUserProfile", b =>
+                {
+                    b.Property<int>("EnrolledCoursesId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EnrolledUsersId")
+                        .HasColumnType("int");
+
+                    b.HasKey("EnrolledCoursesId", "EnrolledUsersId");
+
+                    b.HasIndex("EnrolledUsersId");
+
+                    b.ToTable("CourseUserProfile");
+                });
+
             modelBuilder.Entity("LmsProject.Domain.Entities.Course", b =>
                 {
                     b.Property<int>("Id")
@@ -51,6 +66,12 @@ namespace LmsProject.Infrastructure.Persitence.Migrations
                     b.Property<string>("Domain")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("EnrollmentDeadline")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("EnrollmentStartDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
@@ -365,6 +386,21 @@ namespace LmsProject.Infrastructure.Persitence.Migrations
                     b.HasOne("LmsProject.Domain.Entities.Instructor", null)
                         .WithMany()
                         .HasForeignKey("InstructorsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("CourseUserProfile", b =>
+                {
+                    b.HasOne("LmsProject.Domain.Entities.Course", null)
+                        .WithMany()
+                        .HasForeignKey("EnrolledCoursesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("LmsProject.Domain.Entities.UserProfile", null)
+                        .WithMany()
+                        .HasForeignKey("EnrolledUsersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

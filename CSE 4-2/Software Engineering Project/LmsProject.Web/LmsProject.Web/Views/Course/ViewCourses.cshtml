@@ -1,8 +1,12 @@
 ﻿@model LmsProject.Web.Models.CourseViewModel
+@using System.Security.Claims
 
 @{
     ViewData["Title"] = "Available Courses";
+    var isAuthenticated = User.Identity?.IsAuthenticated ?? false;
+    var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 }
+
 <style>
     .course-item-card {
         cursor: pointer;
@@ -20,7 +24,7 @@
 
     .description-truncated {
         display: -webkit-box;
-        -webkit-line-clamp: 7;
+        -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         overflow: hidden;
         line-height: 1.5;
@@ -43,9 +47,28 @@
 <div class="container-fluid px-4">
     <h3 class="mb-4 text-dark fw-bold font-monospace">Available Courses</h3>
 
-    <form method="get" action="@Url.Action("ViewCourses", "Course")" class="row g-3 align-items-center bg-white p-3 rounded border shadow-sm mb-4">
-        <div class="col-md-4">
-            <label class="form-label fw-bold text-muted small mb-1">Course Domain</label>
+    <form method="get" action="@Url.Action("ViewCourses", "Course")" class="row g-3 align-items-end bg-white p-3 rounded border shadow-sm mb-4">
+
+        <!-- 1. Enrolled Filter -->
+        <div class="col-md-3">
+            <label class="form-label fw-bold text-muted small mb-1">Enrolled</label>
+            <select name="enrolled" class="form-select" onchange="this.form.submit()" @(!isAuthenticated ? "disabled" : "")>
+                <option value="N/A" selected="@(Model.SelectedEnrollment == "N/A" ? "selected" : null)">N/A (All)</option>
+                @if (isAuthenticated)
+                {
+                    <option value="Enrolled" selected="@(Model.SelectedEnrollment == "Enrolled" ? "selected" : null)">Enrolled</option>
+                    <option value="Not Enrolled" selected="@(Model.SelectedEnrollment == "Not Enrolled" ? "selected" : null)">Not Enrolled</option>
+                }
+            </select>
+            @if (!isAuthenticated)
+            {
+                <small class="text-danger" style="font-size:0.7rem;">Login required</small>
+            }
+        </div>
+
+        <!-- 2. Domain Filter -->
+        <div class="col-md-3">
+            <label class="form-label fw-bold text-muted small mb-1">Domain</label>
             <select name="domain" class="form-select" onchange="this.form.submit()">
                 <option value="All" selected="@(Model.SelectedDomain == "All" ? "selected" : null)">All Domains</option>
                 @foreach (var domain in Model.Domains)
@@ -55,8 +78,9 @@
             </select>
         </div>
 
-        <div class="col-md-4">
-            <label class="form-label fw-bold text-muted small mb-1">Filter Instructor</label>
+        <!-- 3. Instructor Filter -->
+        <div class="col-md-3">
+            <label class="form-label fw-bold text-muted small mb-1">Instructor</label>
             <select name="instructor" class="form-select" onchange="this.form.submit()">
                 <option value="All" selected="@(Model.SelectedInstructor == "All" ? "selected" : null)">All Instructors</option>
                 @foreach (var inst in Model.Instructors)
@@ -66,10 +90,11 @@
             </select>
         </div>
 
-        <div class="col-md-4">
-            <label class="form-label fw-bold text-muted small mb-1">Search Instructor Name</label>
+        <!-- 4. Search Filter -->
+        <div class="col-md-3">
+            <label class="form-label fw-bold text-muted small mb-1">Search</label>
             <div class="input-group">
-                <input type="text" name="search" class="form-control" placeholder="Search name..." value="@Model.SearchTerm" />
+                <input type="text" name="search" class="form-control" placeholder="Search by course name..." value="@Model.SearchTerm" />
                 <button type="submit" class="btn btn-dark">Search</button>
             </div>
         </div>
@@ -85,11 +110,9 @@
             @foreach (var course in Model.Courses)
             {
                 <div class="col-12 col-md-6 col-lg-4">
-                    <!-- CHANGED: Moved p-4 class to inner body so image can reach edges -->
                     <div class="card h-100 course-item-card shadow-sm d-flex flex-column overflow-hidden"
                          onclick="location.href='@Url.Action("Details", "Course", new { id = course.Id })'">
 
-                        <!-- ADDED: Display Thumbnail Image -->
                         @if (!string.IsNullOrEmpty(course.ImageUrl))
                         {
                             <img src="@course.ImageUrl" class="w-100" style="height: 180px; object-fit: cover;" alt="@course.Title" />
@@ -122,19 +145,50 @@
                                 <p class="text-muted opacity-50 small mb-4 font-monospace" style="font-size: 0.75rem; font-style: italic;">No course overview details added yet.</p>
                             }
 
-                            <div class="mt-auto pt-3 border-top">
+                            <div class="mt-auto pt-3 border-top mb-3">
                                 <span class="text-muted d-block small mb-1 fw-semibold">Instructors:</span>
                                 @foreach (var inst in course.Instructors)
                                 {
-                                    <a href="@Url.Action("ViewCourses", "Course", new { instructor = inst.Name, domain = "All" })"
-                                       target="_blank"
-                                       class="btn btn-sm btn-light border text-dark me-1 my-1 px-2 py-0 fw-medium"
-                                       style="font-size: 0.8rem; transition: background-color 0.2s;"
-                                       onclick="event.stopPropagation();">
+                                    <span class="badge bg-light border text-dark me-1 my-1 px-2 py-1 fw-medium" style="font-size: 0.75rem;">
                                         👤 @inst.Name
-                                    </a>
+                                    </span>
                                 }
                             </div>
+
+                            <!-- ENROLLMENT BUTTON LOGIC -->
+                            <div class="mt-2" onclick="event.stopPropagation();">
+                                @{
+                                    var isEnrolled = isAuthenticated && course.EnrolledUsers.Any(u => u.IdentityUserId == currentUserId);
+                                    var now = DateTime.UtcNow;
+                                    var notStarted = now < course.EnrollmentStartDate;
+                                    var isClosed = now > course.EnrollmentDeadline;
+                                }
+
+                                @if (!isAuthenticated)
+                                {
+                                    <a href="@Url.Action("Login", "Account")" class="btn btn-outline-primary w-100 fw-bold">Login to Enroll</a>
+                                }
+                                else if (isEnrolled)
+                                {
+                                    <button class="btn btn-success w-100 fw-bold" disabled>✓ Enrolled</button>
+                                }
+                                else if (notStarted)
+                                {
+                                    <button class="btn btn-secondary w-100 fw-bold" disabled>Opens: @course.EnrollmentStartDate.ToString("MMM dd, yyyy")</button>
+                                }
+                                else if (isClosed)
+                                {
+                                    <button class="btn btn-danger w-100 fw-bold opacity-75" disabled>Enrollment Closed</button>
+                                }
+                                else
+                                {
+                                    <form method="post" action="@Url.Action("Enroll", "Course", new { id = course.Id })">
+                                        @Html.AntiForgeryToken()
+                                        <button type="submit" class="btn btn-primary w-100 fw-bold">Enroll Now</button>
+                                    </form>
+                                }
+                            </div>
+
                         </div>
                     </div>
                 </div>

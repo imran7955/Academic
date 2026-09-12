@@ -14,40 +14,31 @@ namespace LmsProject.Application.Services
         private readonly IInstructorRepository _instructorRepository;
         private readonly ISyllabusRepository _syllabusRepository;
 
-        public InstructorService(
-            ICourseRepository courseRepository,
-            IInstructorRepository instructorRepository,
-            ISyllabusRepository syllabusRepository)
+        public InstructorService(ICourseRepository courseRepository, IInstructorRepository instructorRepository, ISyllabusRepository syllabusRepository)
         {
             _courseRepository = courseRepository;
             _instructorRepository = instructorRepository;
             _syllabusRepository = syllabusRepository;
         }
 
-        public async Task<IEnumerable<Instructor>> GetAllInstructorsAsync()
-        {
-            return await _instructorRepository.GetAllInstructorsAsync();
-        }
+        public async Task<IEnumerable<Instructor>> GetAllInstructorsAsync() => await _instructorRepository.GetAllInstructorsAsync();
 
         public async Task RegisterInstructorAsync(string name, string identityUserId)
         {
-            var instructor = new Instructor
-            {
-                Name = name,
-                IdentityUserId = identityUserId
-            };
+            var instructor = new Instructor { Name = name, IdentityUserId = identityUserId };
             await _instructorRepository.AddInstructorAsync(instructor);
         }
 
-        // ADDED: string? imageUrl to signature and mapped it to Course
-        public async Task RegisterCourseAsync(string title, string domain, string description, List<int> instructorIds, string? imageUrl)
+        public async Task RegisterCourseAsync(string title, string domain, string description, List<int> instructorIds, string? imageUrl, DateTime enrollmentStartDate, DateTime enrollmentDeadline)
         {
             var course = new Course
             {
                 Title = title,
                 Domain = domain,
                 Description = description,
-                ImageUrl = imageUrl // MAP NEW FIELD
+                ImageUrl = imageUrl,
+                EnrollmentStartDate = enrollmentStartDate,
+                EnrollmentDeadline = enrollmentDeadline
             };
 
             if (instructorIds != null)
@@ -55,18 +46,14 @@ namespace LmsProject.Application.Services
                 foreach (var id in instructorIds)
                 {
                     var instructor = await _instructorRepository.GetInstructorByIdAsync(id);
-                    if (instructor != null)
-                    {
-                        course.Instructors.Add(instructor);
-                    }
+                    if (instructor != null) course.Instructors.Add(instructor);
                 }
             }
 
             await _courseRepository.AddCourseAsync(course);
         }
 
-        // ADDED: string? imageUrl to signature and mapped it to Course
-        public async Task UpdateCourseDetailsAsync(int id, string title, string domain, string description, List<int> instructorIds, string? imageUrl)
+        public async Task UpdateCourseDetailsAsync(int id, string title, string domain, string description, List<int> instructorIds, string? imageUrl, DateTime enrollmentStartDate, DateTime enrollmentDeadline)
         {
             var existingCourse = await _courseRepository.GetCourseByIdWithDetailsAsync(id);
             if (existingCourse == null) return;
@@ -74,12 +61,10 @@ namespace LmsProject.Application.Services
             existingCourse.Title = title;
             existingCourse.Domain = domain;
             existingCourse.Description = description;
+            existingCourse.EnrollmentStartDate = enrollmentStartDate;
+            existingCourse.EnrollmentDeadline = enrollmentDeadline;
 
-            // Only update the image if a new one was actually uploaded
-            if (imageUrl != null)
-            {
-                existingCourse.ImageUrl = imageUrl;
-            }
+            if (imageUrl != null) existingCourse.ImageUrl = imageUrl;
 
             existingCourse.Instructors.Clear();
 
@@ -88,10 +73,7 @@ namespace LmsProject.Application.Services
                 foreach (var instId in instructorIds)
                 {
                     var instructor = await _instructorRepository.GetInstructorByIdAsync(instId);
-                    if (instructor != null)
-                    {
-                        existingCourse.Instructors.Add(instructor);
-                    }
+                    if (instructor != null) existingCourse.Instructors.Add(instructor);
                 }
             }
 
@@ -100,6 +82,7 @@ namespace LmsProject.Application.Services
 
         public async Task SaveBulkSyllabusAsync(int courseId, List<SyllabusItemDto> materialsDto)
         {
+            // (Keep exact same bulk syllabus logic as your previous file version here, omitting for brevity in this list, but DO NOT delete it from your actual file)
             var course = await _courseRepository.GetCourseByIdWithDetailsAsync(courseId);
             if (course == null) return;
 
@@ -108,31 +91,16 @@ namespace LmsProject.Application.Services
                 var materialsToDelete = course.CourseMaterials.Select(cm => cm.Material).ToList();
                 await _syllabusRepository.RemoveCourseMaterialsRangeAsync(course.CourseMaterials);
 
-                foreach (var oldMat in materialsToDelete)
-                {
-                    await _syllabusRepository.RemoveMaterialAsync(oldMat);
-                }
+                foreach (var oldMat in materialsToDelete) await _syllabusRepository.RemoveMaterialAsync(oldMat);
             }
 
             if (materialsDto != null)
             {
                 foreach (var item in materialsDto)
                 {
-                    var material = new Material
-                    {
-                        Title = item.Title,
-                        YouTubeLink = item.YouTubeLink
-                    };
-
+                    var material = new Material { Title = item.Title, YouTubeLink = item.YouTubeLink };
                     await _syllabusRepository.AddMaterialAsync(material);
-
-                    var courseMaterialLink = new CourseMaterial
-                    {
-                        CourseId = courseId,
-                        MaterialId = material.Id,
-                        Position = item.Position
-                    };
-
+                    var courseMaterialLink = new CourseMaterial { CourseId = courseId, MaterialId = material.Id, Position = item.Position };
                     await _syllabusRepository.AddCourseMaterialLinkAsync(courseMaterialLink);
                 }
             }
@@ -140,15 +108,7 @@ namespace LmsProject.Application.Services
 
         public async Task CreateUserProfileAsync(string identityUserId, string fullName, string emailAddress, string accountType)
         {
-            var customProfile = new UserProfile
-            {
-                IdentityUserId = identityUserId,
-                FullName = fullName,
-                EmailAddress = emailAddress,
-                AccountType = accountType,
-                RegisteredOn = DateTime.UtcNow
-            };
-
+            var customProfile = new UserProfile { IdentityUserId = identityUserId, FullName = fullName, EmailAddress = emailAddress, AccountType = accountType, RegisteredOn = DateTime.UtcNow };
             await _instructorRepository.AddUserProfileAsync(customProfile);
         }
     }

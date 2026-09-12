@@ -12,7 +12,6 @@
             <h5 class="mb-0 fw-bold font-monospace">Setup New Learning Course</h5>
         </div>
         <div class="card-body p-4">
-            <!-- ADDED: enctype="multipart/form-data" for image uploads -->
             <form method="post" action="@Url.Action("CreateCourse", "Instructor")" onsubmit="prepareDomainPayload()" enctype="multipart/form-data">
                 @Html.AntiForgeryToken()
 
@@ -51,11 +50,23 @@
                     }
                 </div>
 
-                <!-- ADDED: Course Thumbnail Upload Field -->
                 <div class="mb-4">
                     <label class="form-label fw-bold text-secondary">Course Thumbnail Image</label>
                     <input type="file" name="imageFile" id="imageFile" class="form-control" accept="image/*" />
                     <small class="text-muted d-block mt-1">Upload a cover image for this course (optional).</small>
+                </div>
+
+                <!-- ADDED: Enrollment Dates -->
+                <div class="row mb-4 p-3 bg-light rounded border">
+                    <h6 class="fw-bold text-dark mb-3">Enrollment Scheduling (UTC)</h6>
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <label class="form-label fw-bold text-secondary small">Start Date & Time</label>
+                        <input type="datetime-local" name="enrollmentStartDate" class="form-control" required />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold text-secondary small">Deadline Date & Time</label>
+                        <input type="datetime-local" name="enrollmentDeadline" class="form-control" required />
+                    </div>
                 </div>
 
                 <div class="mb-4">

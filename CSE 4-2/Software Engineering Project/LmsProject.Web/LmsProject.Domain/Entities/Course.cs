@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace LmsProject.Domain.Entities
 {
@@ -8,12 +9,17 @@ namespace LmsProject.Domain.Entities
         public string Title { get; set; } = string.Empty;
         public string Domain { get; set; } = string.Empty;
         public string? Description { get; set; }
+
         public string? ImageUrl { get; set; }
 
-        // Many-to-Many relationship directly with Instructors
-        public ICollection<Instructor> Instructors { get; set; } = new List<Instructor>();
+        // NEW FEATURE: Enrollment Dates
+        public DateTime EnrollmentStartDate { get; set; }
+        public DateTime EnrollmentDeadline { get; set; }
 
-        // Relationship to Materials through our custom join entity
+        public ICollection<Instructor> Instructors { get; set; } = new List<Instructor>();
         public ICollection<CourseMaterial> CourseMaterials { get; set; } = new List<CourseMaterial>();
+
+        // NEW FEATURE: Enrolled Users Relationship
+        public ICollection<UserProfile> EnrolledUsers { get; set; } = new List<UserProfile>();
     }
 }

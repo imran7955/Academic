@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using LmsProject.Domain.Entities;
 using LmsProject.Domain.Repositories;
-using LmsProject.Infrastructure.Persistence; // Points directly to ApplicationDbContext
+using LmsProject.Infrastructure.Persistence;
 
 namespace LmsProject.Infrastructure.Repositories
 {
@@ -24,6 +24,7 @@ namespace LmsProject.Infrastructure.Repositories
                 .Include(c => c.Instructors)
                 .Include(c => c.CourseMaterials)
                     .ThenInclude(cm => cm.Material)
+                .Include(c => c.EnrolledUsers) // ADDED: Load enrolled users
                 .ToListAsync();
         }
 
@@ -33,6 +34,7 @@ namespace LmsProject.Infrastructure.Repositories
                 .Include(c => c.Instructors)
                 .Include(c => c.CourseMaterials)
                     .ThenInclude(cm => cm.Material)
+                .Include(c => c.EnrolledUsers) // ADDED: Load enrolled users
                 .FirstOrDefaultAsync(c => c.Id == id);
         }
 
@@ -50,11 +52,27 @@ namespace LmsProject.Infrastructure.Repositories
                 .ToListAsync();
         }
 
-        // The working explicit persistence update method
         public async Task UpdateCourseAsync(Course course)
         {
             _context.Courses.Update(course);
             await _context.SaveChangesAsync();
+        }
+
+        // NEW FEATURE: Handles database link between UserProfile and Course
+        public async Task EnrollUserAsync(int courseId, string identityUserId)
+        {
+            var course = await _context.Courses
+                .Include(c => c.EnrolledUsers)
+                .FirstOrDefaultAsync(c => c.Id == courseId);
+
+            var userProfile = await _context.UserProfiles
+                .FirstOrDefaultAsync(u => u.IdentityUserId == identityUserId);
+
+            if (course != null && userProfile != null && !course.EnrolledUsers.Any(u => u.Id == userProfile.Id))
+            {
+                course.EnrolledUsers.Add(userProfile);
+                await _context.SaveChangesAsync();
+            }
         }
     }
 }

@@ -1,67 +1,69 @@
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery\dist\jquery.slim.min.js
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\js\site.js
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery-validation\dist\additional-methods.js
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery\dist\jquery.slim.min.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\css\site.css
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery\dist\jquery.min.js
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery\dist\jquery.slim.js
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery\dist\jquery.js
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery\dist\jquery.min.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery-validation\LICENSE.md
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\favicon.ico
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery\LICENSE.txt
-C:\Users\IMRAN\Music\New folder\bs23attachment\LMS\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery\dist\jquery.slim.min.js
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\js\site.js
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery-validation\dist\additional-methods.js
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery\dist\jquery.slim.min.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\css\site.css
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery\dist\jquery.min.js
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery\dist\jquery.slim.js
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery\dist\jquery.js
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery\dist\jquery.min.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery-validation\LICENSE.md
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\favicon.ico
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\jquery\LICENSE.txt
+C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\courses\4b16d061-ee1f-418b-819f-412237ee3bc6_Screenshot 2026-09-12 235726.png
+wwwroot\images\courses\e51325b2-af70-43d6-a4a7-fbca04a28b48_Screenshot 2026-08-22 150918.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\LICENSE
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css

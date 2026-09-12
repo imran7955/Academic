@@ -10,8 +10,9 @@ namespace LmsProject.Domain.Repositories
         Task<Course?> GetCourseByIdWithDetailsAsync(int id);
         Task AddCourseAsync(Course course);
         Task<IEnumerable<string>> GetDistinctDomainsAsync();
-
-        // ADDED: Explicit method contract for updating existing courses
         Task UpdateCourseAsync(Course course);
+
+        // NEW FEATURE: Enrollment handling
+        Task EnrollUserAsync(int courseId, string identityUserId);
     }
 }
