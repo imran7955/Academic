@@ -24,7 +24,8 @@ namespace LmsProject.Infrastructure.Repositories
                 .Include(c => c.Instructors)
                 .Include(c => c.CourseMaterials)
                     .ThenInclude(cm => cm.Material)
-                .Include(c => c.EnrolledUsers) // ADDED: Load enrolled users
+                .Include(c => c.EnrolledUsers)
+                .Include(c => c.Quizzes) // ADDED: Load Quizzes
                 .ToListAsync();
         }
 
@@ -34,7 +35,9 @@ namespace LmsProject.Infrastructure.Repositories
                 .Include(c => c.Instructors)
                 .Include(c => c.CourseMaterials)
                     .ThenInclude(cm => cm.Material)
-                .Include(c => c.EnrolledUsers) // ADDED: Load enrolled users
+                .Include(c => c.EnrolledUsers)
+                .Include(c => c.Quizzes) // ADDED: Load Quizzes
+                .Include(c => c.AttendanceRecords)
                 .FirstOrDefaultAsync(c => c.Id == id);
         }
 
@@ -58,7 +61,6 @@ namespace LmsProject.Infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
 
-        // NEW FEATURE: Handles database link between UserProfile and Course
         public async Task EnrollUserAsync(int courseId, string identityUserId)
         {
             var course = await _context.Courses

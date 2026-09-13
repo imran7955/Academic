@@ -63,6 +63,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/IMRAN/Downloads/AcademicUpload/CSE 4-2/Software Engineering Project/LmsProject.Web/LmsProject.Web/Views/Instructor/AddQuiz.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxBZGRRdWl6LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/IMRAN/Downloads/AcademicUpload/CSE 4-2/Software Engineering Project/LmsProject.Web/LmsProject.Web/Views/Instructor/Attendance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxBdHRlbmRhbmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/IMRAN/Downloads/AcademicUpload/CSE 4-2/Software Engineering Project/LmsProject.Web/LmsProject.Web/Views/Instructor/CreateCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxDcmVhdGVDb3Vyc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -73,6 +81,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/IMRAN/Downloads/AcademicUpload/CSE 4-2/Software Engineering Project/LmsProject.Web/LmsProject.Web/Views/Instructor/EditCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxFZGl0Q291cnNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/IMRAN/Downloads/AcademicUpload/CSE 4-2/Software Engineering Project/LmsProject.Web/LmsProject.Web/Views/Quiz/Info.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxJbmZvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/IMRAN/Downloads/AcademicUpload/CSE 4-2/Software Engineering Project/LmsProject.Web/LmsProject.Web/Views/Quiz/Result.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxSZXN1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/IMRAN/Downloads/AcademicUpload/CSE 4-2/Software Engineering Project/LmsProject.Web/LmsProject.Web/Views/Quiz/Take.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxUYWtlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/IMRAN/Downloads/AcademicUpload/CSE 4-2/Software Engineering Project/LmsProject.Web/LmsProject.Web/Views/Shared/Error.cshtml]

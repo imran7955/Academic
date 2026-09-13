@@ -14,5 +14,7 @@ namespace LmsProject.Domain.Entities
 
         // NEW FEATURE: Enrolled Courses Relationship
         public ICollection<Course> EnrolledCourses { get; set; } = new List<Course>();
+
+        public ICollection<AttendanceRecord> AttendanceRecords { get; set; } = new List<AttendanceRecord>();
     }
 }

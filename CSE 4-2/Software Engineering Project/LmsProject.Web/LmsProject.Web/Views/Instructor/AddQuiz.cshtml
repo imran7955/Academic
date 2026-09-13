@@ -1,0 +1,161 @@
+﻿@model LmsProject.Web.Models.CreateQuizViewModel
+
+@{
+    ViewData["Title"] = "Add New Quiz";
+}
+
+<div class="container my-5" style="max-width: 900px;">
+    <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+        <h3 class="text-dark fw-bold mb-0 font-monospace">📝 Build MCQ Assessment</h3>
+        <a href="@Url.Action("Dashboard", "Instructor")" class="btn btn-outline-secondary fw-bold shadow-sm">← Cancel</a>
+    </div>
+
+    <form method="post" action="@Url.Action("AddQuiz", "Instructor")" id="quizForm">
+        @Html.AntiForgeryToken()
+        <input type="hidden" asp-for="CourseId" />
+
+        <!-- Quiz Meta Details -->
+        <div class="card shadow-sm border mb-4">
+            <div class="card-header bg-dark text-white fw-bold">1. Assessment Settings</div>
+            <div class="card-body p-4 bg-light">
+                <div class="row g-3">
+                    <div class="col-md-8">
+                        <label class="form-label fw-bold text-secondary small">Quiz Title</label>
+                        <input type="text" asp-for="Title" class="form-control" required placeholder="e.g. Midterm Assessment" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label fw-bold text-secondary small">Time Limit (Minutes)</label>
+                        <input type="number" asp-for="TimeLimitMinutes" class="form-control" required min="1" value="15" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold text-secondary small">Available From (UTC)</label>
+                        <input type="datetime-local" asp-for="AvailableFrom" class="form-control" required value="@Model.AvailableFrom.ToString("yyyy-MM-ddTHH:mm")" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold text-secondary small">Available Until (UTC)</label>
+                        <input type="datetime-local" asp-for="AvailableTo" class="form-control" required value="@Model.AvailableTo.ToString("yyyy-MM-ddTHH:mm")" />
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label fw-bold text-secondary small">Instructions / Description</label>
+                        <textarea asp-for="Description" class="form-control" rows="2" placeholder="Rules for this quiz..."></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dynamic Questions Area -->
+        <div class="d-flex justify-content-between align-items-end mb-3">
+            <h5 class="fw-bold mb-0">2. Questions Layout</h5>
+            <div class="bg-primary text-white px-3 py-2 rounded shadow-sm fw-bold">
+                Total Marks: <span id="totalMarksDisplay">0</span>
+            </div>
+        </div>
+
+        <div id="questionsContainer">
+            <!-- Questions injected here by JS -->
+        </div>
+
+        <button type="button" class="btn btn-outline-primary w-100 fw-bold py-3 mb-4 dashed-border" onclick="addQuestionBlock()">
+            ➕ Add Another Question
+        </button>
+
+        <button type="submit" class="btn btn-success w-100 fw-bold py-3 shadow-sm fs-5">
+            💾 Publish Quiz to Course
+        </button>
+    </form>
+</div>
+
+<style>
+    .dashed-border {
+        border: 2px dashed #0d6efd;
+        background-color: #f8fafc;
+    }
+
+        .dashed-border:hover {
+            background-color: #e0f2fe;
+        }
+
+    .question-card {
+        border-left: 4px solid #0d6efd;
+        transition: all 0.2s;
+    }
+</style>
+
+<script>
+    let questionIndex = 0;
+
+    function addQuestionBlock() {
+        const container = document.getElementById('questionsContainer');
+        const qId = questionIndex;
+
+        const html = `
+            <div class="card shadow-sm mb-4 question-card" id="qBlock_${qId}">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between mb-3">
+                        <h6 class="fw-bold text-primary mb-0">Question #${qId + 1}</h6>
+                        <button type="button" class="btn btn-sm btn-outline-danger" onclick="removeQuestionBlock(${qId})">Remove</button>
+                    </div>
+
+                    <div class="mb-3">
+                        <textarea name="Questions[${qId}].Text" class="form-control fw-bold" rows="2" placeholder="Type the question here..." required></textarea>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-text"><input type="radio" name="Questions[${qId}].CorrectOption" value="A" checked></div>
+                                <input type="text" name="Questions[${qId}].OptionA" class="form-control" placeholder="Option A" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-text"><input type="radio" name="Questions[${qId}].CorrectOption" value="B"></div>
+                                <input type="text" name="Questions[${qId}].OptionB" class="form-control" placeholder="Option B" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-text"><input type="radio" name="Questions[${qId}].CorrectOption" value="C"></div>
+                                <input type="text" name="Questions[${qId}].OptionC" class="form-control" placeholder="Option C" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-text"><input type="radio" name="Questions[${qId}].CorrectOption" value="D"></div>
+                                <input type="text" name="Questions[${qId}].OptionD" class="form-control" placeholder="Option D" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-end gap-2 border-top pt-3">
+                        <label class="fw-bold small text-muted mb-0">Marks for this question:</label>
+                        <input type="number" name="Questions[${qId}].MarkValue" class="form-control form-control-sm mark-input" style="width: 80px;" value="1" step="0.5" min="0.5" onchange="calculateTotalMarks()" required>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        container.insertAdjacentHTML('beforeend', html);
+        questionIndex++;
+        calculateTotalMarks();
+    }
+
+    function removeQuestionBlock(id) {
+        document.getElementById(`qBlock_${id}`).remove();
+        calculateTotalMarks();
+    }
+
+    function calculateTotalMarks() {
+        let total = 0;
+        const inputs = document.querySelectorAll('.mark-input');
+        inputs.forEach(input => {
+            total += parseFloat(input.value) || 0;
+        });
+        document.getElementById('totalMarksDisplay').innerText = total.toFixed(1);
+    }
+
+    // Initialize first question
+    document.addEventListener("DOMContentLoaded", function() {
+        addQuestionBlock();
+    });
+</script>

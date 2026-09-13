@@ -1,0 +1,82 @@
+﻿@model LmsProject.Web.Models.QuizResultViewModel
+
+@{
+    ViewData["Title"] = "Quiz Results";
+
+    // Calculate percentage and determine styling
+    double percentage = Model.TotalPossibleMarks > 0
+        ? (double)(Model.StudentScore / Model.TotalPossibleMarks) * 100
+        : 0;
+
+    string colorClass = percentage >= 80 ? "text-success" : (percentage >= 50 ? "text-warning" : "text-danger");
+}
+
+<div class="container my-5" style="max-width: 800px;">
+
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-dark mb-2">@Model.Title</h2>
+        <p class="text-muted">Assessment Completed</p>
+    </div>
+
+    <!-- Personal Score Card -->
+    <div class="card shadow-lg border-0 rounded-4 mb-5 overflow-hidden">
+        <div class="bg-dark text-white text-center py-3 fw-bold font-monospace tracking-wider">
+            YOUR FINAL RESULT
+        </div>
+        <div class="card-body p-5 text-center">
+            <h1 class="display-1 fw-bold @colorClass mb-0">@Model.StudentScore</h1>
+            <div class="text-muted fw-bold mt-2" style="font-size: 1.2rem;">out of @Model.TotalPossibleMarks marks</div>
+
+            <div class="mt-4 pt-4 border-top">
+                <a href="@Url.Action("Dashboard", "Instructor")" class="btn btn-outline-secondary fw-bold rounded-pill px-4">Exit</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaderboard -->
+    <h4 class="fw-bold text-dark mb-3 font-monospace">🏆 Quiz Leaderboard</h4>
+    <div class="card shadow-sm border-0 rounded-4 overflow-hidden">
+        @if (!Model.Leaderboard.Any())
+        {
+            <div class="card-body text-center py-5 text-muted">
+                No attempts recorded yet.
+            </div>
+        }
+        else
+        {
+            <table class="table table-hover mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th class="py-3 px-4 text-muted small">Rank</th>
+                        <th class="py-3 text-muted small">Student Name</th>
+                        <th class="py-3 text-muted small text-end">Score</th>
+                        <th class="py-3 px-4 text-muted small text-end">Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        int rank = 1;
+                    }
+                    @foreach (var entry in Model.Leaderboard)
+                    {
+                        <tr class="@(entry.IsCurrentUser ? "table-primary" : "")">
+                            <td class="py-3 px-4 fw-bold">#@rank</td>
+                            <td class="py-3 fw-bold text-dark">
+                                @entry.StudentName
+                                @if (entry.IsCurrentUser)
+                                {
+                                    <span class="badge bg-primary ms-2">You</span>
+                                }
+                            </td>
+                            <td class="py-3 fw-bold text-end @(entry.Score == Model.TotalPossibleMarks ? "text-success" : "")">
+                                @entry.Score
+                            </td>
+                            <td class="py-3 px-4 text-muted small text-end">@entry.CompletedAt.ToString("MMM dd")</td>
+                        </tr>
+                        rank++;
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>

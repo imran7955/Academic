@@ -62,7 +62,11 @@ C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\Lms
 C:\Users\IMRAN\Downloads\AcademicUpload\CSE 4-2\Software Engineering Project\LmsProject.Web\LmsProject.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\courses\27a06796-8f6f-4aeb-a817-972e45470e55_STL.png
+wwwroot\images\courses\3ee5aa7c-06ef-43f5-8fdb-0ca108ac2577_img1.png
 wwwroot\images\courses\4b16d061-ee1f-418b-819f-412237ee3bc6_Screenshot 2026-09-12 235726.png
+wwwroot\images\courses\964164bf-c857-440f-b55d-04ff550b38c9_Screenshot 2026-09-13 114217.png
+wwwroot\images\courses\9a8bf04a-e605-4d78-9896-8a140c7f6f88_STL.png
 wwwroot\images\courses\e51325b2-af70-43d6-a4a7-fbca04a28b48_Screenshot 2026-08-22 150918.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\LICENSE

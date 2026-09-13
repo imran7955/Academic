@@ -62,8 +62,15 @@
                                                 @(course.CourseMaterials != null ? course.CourseMaterials.Count : 0)
                                             </td>
                                             <td class="text-center">
-                                                <a href="@Url.Action("EditCourse", "Instructor", new { id = course.Id })" class="btn btn-sm btn-outline-primary fw-bold">
+                                                <a href="@Url.Action("EditCourse", "Instructor", new { id = course.Id })" class="btn btn-sm btn-outline-primary fw-bold mb-1">
                                                     ⚙ Edit Course
+                                                </a>
+                                                <a href="@Url.Action("AddQuiz", "Instructor", new { courseId = course.Id })" class="btn btn-sm btn-outline-success fw-bold ms-1 mb-1">
+                                                    + Add Quiz
+                                                </a>
+                                                <!-- NEW FEATURE: Attendance Button -->
+                                                <a href="@Url.Action("Attendance", "Instructor", new { courseId = course.Id })" class="btn btn-sm btn-outline-info fw-bold ms-1 mb-1">
+                                                    📊 Attendance
                                                 </a>
                                             </td>
                                         </tr>

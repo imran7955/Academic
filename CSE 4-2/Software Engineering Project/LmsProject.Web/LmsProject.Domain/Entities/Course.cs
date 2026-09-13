@@ -12,14 +12,16 @@ namespace LmsProject.Domain.Entities
 
         public string? ImageUrl { get; set; }
 
-        // NEW FEATURE: Enrollment Dates
         public DateTime EnrollmentStartDate { get; set; }
         public DateTime EnrollmentDeadline { get; set; }
 
         public ICollection<Instructor> Instructors { get; set; } = new List<Instructor>();
         public ICollection<CourseMaterial> CourseMaterials { get; set; } = new List<CourseMaterial>();
-
-        // NEW FEATURE: Enrolled Users Relationship
         public ICollection<UserProfile> EnrolledUsers { get; set; } = new List<UserProfile>();
+
+        // NEW FEATURE: Quizzes assigned to this course
+        public ICollection<Quiz> Quizzes { get; set; } = new List<Quiz>();
+
+        public ICollection<AttendanceRecord> AttendanceRecords { get; set; } = new List<AttendanceRecord>();
     }
 }

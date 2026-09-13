@@ -3,6 +3,138 @@
   "WorkspaceRootPath": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\views\\course\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\views\\course\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.infrastructure\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|solutionrelative:lmsproject.infrastructure\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.infrastructure\\repositories\\instructorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|solutionrelative:lmsproject.infrastructure\\repositories\\instructorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.infrastructure\\repositories\\attendancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|solutionrelative:lmsproject.infrastructure\\repositories\\attendancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\views\\instructor\\attendance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\views\\instructor\\attendance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\views\\instructor\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\views\\instructor\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\controllers\\instrucorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\controllers\\instrucorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77C952DD-196D-7F2B-105E-DE3D74C909C8}|LmsProject.Application\\LmsProject.Application.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.application\\services\\attendanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77C952DD-196D-7F2B-105E-DE3D74C909C8}|LmsProject.Application\\LmsProject.Application.csproj|solutionrelative:lmsproject.application\\services\\attendanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77C952DD-196D-7F2B-105E-DE3D74C909C8}|LmsProject.Application\\LmsProject.Application.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.application\\services\\iattendanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77C952DD-196D-7F2B-105E-DE3D74C909C8}|LmsProject.Application\\LmsProject.Application.csproj|solutionrelative:lmsproject.application\\services\\iattendanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.domain\\repositories\\iattendancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|solutionrelative:lmsproject.domain\\repositories\\iattendancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77C952DD-196D-7F2B-105E-DE3D74C909C8}|LmsProject.Application\\LmsProject.Application.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.application\\dtos\\attendancesessiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77C952DD-196D-7F2B-105E-DE3D74C909C8}|LmsProject.Application\\LmsProject.Application.csproj|solutionrelative:lmsproject.application\\dtos\\attendancesessiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Persitence\\Migrations\\20260913070018_AddAttendanceTracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LmsProject.Infrastructure\\Persitence\\Migrations\\20260913070018_AddAttendanceTracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|solutionrelative:lmsproject.infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.domain\\entities\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|solutionrelative:lmsproject.domain\\entities\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.domain\\entities\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|solutionrelative:lmsproject.domain\\entities\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.domain\\entities\\attendancerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|solutionrelative:lmsproject.domain\\entities\\attendancerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\models\\quizviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\models\\quizviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\views\\quiz\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\views\\quiz\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\controllers\\quizcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\controllers\\quizcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\views\\quiz\\take.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\views\\quiz\\take.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.infrastructure\\repositories\\quizrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|solutionrelative:lmsproject.infrastructure\\repositories\\quizrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\views\\quiz\\info.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\views\\quiz\\info.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\views\\instructor\\addquiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\views\\instructor\\addquiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77C952DD-196D-7F2B-105E-DE3D74C909C8}|LmsProject.Application\\LmsProject.Application.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.application\\services\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77C952DD-196D-7F2B-105E-DE3D74C909C8}|LmsProject.Application\\LmsProject.Application.csproj|solutionrelative:lmsproject.application\\services\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77C952DD-196D-7F2B-105E-DE3D74C909C8}|LmsProject.Application\\LmsProject.Application.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.application\\services\\iquizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77C952DD-196D-7F2B-105E-DE3D74C909C8}|LmsProject.Application\\LmsProject.Application.csproj|solutionrelative:lmsproject.application\\services\\iquizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.domain\\repositories\\iquizrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|solutionrelative:lmsproject.domain\\repositories\\iquizrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.infrastructure\\lmsproject.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|solutionrelative:lmsproject.infrastructure\\lmsproject.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.domain\\entities\\quizattempt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|solutionrelative:lmsproject.domain\\entities\\quizattempt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.domain\\entities\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|solutionrelative:lmsproject.domain\\entities\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.domain\\entities\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|solutionrelative:lmsproject.domain\\entities\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.domain\\entities\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|solutionrelative:lmsproject.domain\\entities\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\views\\instructor\\editcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\views\\instructor\\editcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -11,20 +143,8 @@
       "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\views\\instructor\\createcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\views\\course\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\views\\course\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\views\\course\\viewcourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\views\\course\\viewcourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Persitence\\Migrations\\20260912192858_AddEnrollmentFeatures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LmsProject.Infrastructure\\Persitence\\Migrations\\20260912192858_AddEnrollmentFeatures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\controllers\\instrucorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\controllers\\instrucorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.domain\\repositories\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,24 +171,8 @@
       "RelativeMoniker": "D:0:0:{77C952DD-196D-7F2B-105E-DE3D74C909C8}|LmsProject.Application\\LmsProject.Application.csproj|solutionrelative:lmsproject.application\\services\\icourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.infrastructure\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|solutionrelative:lmsproject.infrastructure\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|solutionrelative:lmsproject.infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\models\\courseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\models\\courseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.domain\\entities\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|solutionrelative:lmsproject.domain\\entities\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.domain\\entities\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|solutionrelative:lmsproject.domain\\entities\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\IMRAN\\AppData\\Local\\Temp\\MetadataAsSource\\504e9a7471474c83a340fc60c41b6f6a\\DecompilationMetadataAsSourceFileProvider\\60eafba60f674925942d53d218601b11\\String.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -106,10 +210,6 @@
       "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -120,10 +220,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\views\\user\\_usertablepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\views\\user\\_usertablepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\views\\instructor\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\views\\instructor\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\models\\usermanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -150,10 +246,6 @@
       "RelativeMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|solutionrelative:lmsproject.domain\\repositories\\iinstructorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.infrastructure\\repositories\\instructorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|solutionrelative:lmsproject.infrastructure\\repositories\\instructorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.infrastructure\\persitence\\migrations\\20260612061840_addidentitylinktoinstructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|solutionrelative:lmsproject.infrastructure\\persitence\\migrations\\20260612061840_addidentitylinktoinstructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -162,20 +254,12 @@
       "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.domain\\entities\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|solutionrelative:lmsproject.domain\\entities\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.infrastructure\\persitence\\migrations\\20260611120038_addidentityrolesupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|solutionrelative:lmsproject.infrastructure\\persitence\\migrations\\20260611120038_addidentityrolesupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31BB5E59-C7FE-D13C-8000-D748BCF3748E}|LmsProject.Web\\LmsProject.Web.csproj|solutionrelative:lmsproject.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{77C952DD-196D-7F2B-105E-DE3D74C909C8}|LmsProject.Application\\LmsProject.Application.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.application\\dtos\\syllabusitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -208,6 +292,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.domain\\entities\\coursematerial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{710C5548-5F54-EE74-2C7B-E490769144DE}|LmsProject.Domain\\LmsProject.Domain.csproj|solutionrelative:lmsproject.domain\\entities\\coursematerial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.infrastructure\\persitence\\migrations\\20260912192858_addenrollmentfeatures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|solutionrelative:lmsproject.infrastructure\\persitence\\migrations\\20260912192858_addenrollmentfeatures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|c:\\users\\imran\\downloads\\academicupload\\cse 4-2\\software engineering project\\lmsproject.web\\lmsproject.infrastructure\\persitence\\migrations\\20260912203743_addquizsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A301EBCF-2F2B-FD02-DD4D-6D4A2FD206A5}|LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj|solutionrelative:lmsproject.infrastructure\\persitence\\migrations\\20260912203743_addquizsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -217,95 +309,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20260912192858_AddEnrollmentFeatures.cs",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Persitence\\Migrations\\20260912192858_AddEnrollmentFeatures.cs",
-              "RelativeDocumentMoniker": "LmsProject.Infrastructure\\Persitence\\Migrations\\20260912192858_AddEnrollmentFeatures.cs",
-              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Persitence\\Migrations\\20260912192858_AddEnrollmentFeatures.cs",
-              "RelativeToolTip": "LmsProject.Infrastructure\\Persitence\\Migrations\\20260912192858_AddEnrollmentFeatures.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-12T19:28:58.779Z",
+              "DocumentIndex": 5,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Instructor\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "LmsProject.Web\\Views\\Instructor\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Instructor\\Dashboard.cshtml",
+              "RelativeToolTip": "LmsProject.Web\\Views\\Instructor\\Dashboard.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAIwFUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-10T12:21:21.608Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ViewCourses.cshtml",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Course\\ViewCourses.cshtml",
-              "RelativeDocumentMoniker": "LmsProject.Web\\Views\\Course\\ViewCourses.cshtml",
-              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Course\\ViewCourses.cshtml",
-              "RelativeToolTip": "LmsProject.Web\\Views\\Course\\ViewCourses.cshtml",
-              "ViewState": "AgIAALEAAAAAAAAAAAAcwMUAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-10T12:05:47.343Z",
+              "Title": "AttendanceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Repositories\\AttendanceRepository.cs",
+              "RelativeDocumentMoniker": "LmsProject.Infrastructure\\Repositories\\AttendanceRepository.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Repositories\\AttendanceRepository.cs",
+              "RelativeToolTip": "LmsProject.Infrastructure\\Repositories\\AttendanceRepository.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAywC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T07:04:24.667Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IInstructorService.cs",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\IInstructorService.cs",
-              "RelativeDocumentMoniker": "LmsProject.Application\\Services\\IInstructorService.cs",
-              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\IInstructorService.cs",
-              "RelativeToolTip": "LmsProject.Application\\Services\\IInstructorService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CourseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Repositories\\CourseRepository.cs",
+              "RelativeDocumentMoniker": "LmsProject.Infrastructure\\Repositories\\CourseRepository.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Repositories\\CourseRepository.cs",
+              "RelativeToolTip": "LmsProject.Infrastructure\\Repositories\\CourseRepository.cs",
+              "ViewState": "AgIAABAAAAAANTMzMzMiwCcAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T10:04:37.579Z",
+              "WhenOpened": "2026-06-10T10:45:32.914Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "InstructorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Repositories\\InstructorRepository.cs",
+              "RelativeDocumentMoniker": "LmsProject.Infrastructure\\Repositories\\InstructorRepository.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Repositories\\InstructorRepository.cs",
+              "RelativeToolTip": "LmsProject.Infrastructure\\Repositories\\InstructorRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAuwC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T10:46:07.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Course\\Details.cshtml",
               "RelativeDocumentMoniker": "LmsProject.Web\\Views\\Course\\Details.cshtml",
               "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Course\\Details.cshtml",
               "RelativeToolTip": "LmsProject.Web\\Views\\Course\\Details.cshtml",
-              "ViewState": "AgIAAOsAAAAAAAAAAAAYwAoBAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAcwIUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-06-11T06:14:16.951Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateCourse.cshtml",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Instructor\\CreateCourse.cshtml",
-              "RelativeDocumentMoniker": "LmsProject.Web\\Views\\Instructor\\CreateCourse.cshtml",
-              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Instructor\\CreateCourse.cshtml",
-              "RelativeToolTip": "LmsProject.Web\\Views\\Instructor\\CreateCourse.cshtml",
-              "ViewState": "AgIAAJwAAABQMzMzMzMwwLEAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Attendance.cshtml",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Instructor\\Attendance.cshtml",
+              "RelativeDocumentMoniker": "LmsProject.Web\\Views\\Instructor\\Attendance.cshtml",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Instructor\\Attendance.cshtml",
+              "RelativeToolTip": "LmsProject.Web\\Views\\Instructor\\Attendance.cshtml",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAIwJUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-10T19:36:10.982Z",
+              "WhenOpened": "2026-09-13T07:08:56.29Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EditCourse.cshtml",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Instructor\\EditCourse.cshtml",
-              "RelativeDocumentMoniker": "LmsProject.Web\\Views\\Instructor\\EditCourse.cshtml",
-              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Instructor\\EditCourse.cshtml",
-              "RelativeToolTip": "LmsProject.Web\\Views\\Instructor\\EditCourse.cshtml",
-              "ViewState": "AgIAAKMBAAAAAAAAAAAIwLYBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-11T05:21:53.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "InstrucorController.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Controllers\\InstrucorController.cs",
               "RelativeDocumentMoniker": "LmsProject.Web\\Controllers\\InstrucorController.cs",
               "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Controllers\\InstrucorController.cs",
               "RelativeToolTip": "LmsProject.Web\\Controllers\\InstrucorController.cs",
-              "ViewState": "AgIAABcBAABgMzMzMzMowCEBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADYBAADAmJmZmZkiwDoBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-10T12:27:17.525Z",
               "EditorCaption": ""
@@ -313,79 +405,144 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "CourseController.cs",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Controllers\\CourseController.cs",
-              "RelativeDocumentMoniker": "LmsProject.Web\\Controllers\\CourseController.cs",
-              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Controllers\\CourseController.cs",
-              "RelativeToolTip": "LmsProject.Web\\Controllers\\CourseController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAiwFEAAAABAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Program.cs",
+              "RelativeDocumentMoniker": "LmsProject.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Program.cs",
+              "RelativeToolTip": "LmsProject.Web\\Program.cs",
+              "ViewState": "AgIAACoAAADoNzMzMzMLwDcAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T12:03:50.062Z",
+              "WhenOpened": "2026-06-10T10:34:56.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IAttendanceService.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\IAttendanceService.cs",
+              "RelativeDocumentMoniker": "LmsProject.Application\\Services\\IAttendanceService.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\IAttendanceService.cs",
+              "RelativeToolTip": "LmsProject.Application\\Services\\IAttendanceService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T07:05:01.065Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "InstructorService.cs",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\InstructorService.cs",
-              "RelativeDocumentMoniker": "LmsProject.Application\\Services\\InstructorService.cs",
-              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\InstructorService.cs",
-              "RelativeToolTip": "LmsProject.Application\\Services\\InstructorService.cs",
-              "ViewState": "AgIAAFUAAAAAz8zMzMwQwHIAAAABAAAAAAAAAA==",
+              "Title": "AttendanceService.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\AttendanceService.cs",
+              "RelativeDocumentMoniker": "LmsProject.Application\\Services\\AttendanceService.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\AttendanceService.cs",
+              "RelativeToolTip": "LmsProject.Application\\Services\\AttendanceService.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAIwFIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T10:06:43.222Z",
+              "WhenOpened": "2026-09-13T07:05:42.078Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "CourseService.cs",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\CourseService.cs",
-              "RelativeDocumentMoniker": "LmsProject.Application\\Services\\CourseService.cs",
-              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\CourseService.cs",
-              "RelativeToolTip": "LmsProject.Application\\Services\\CourseService.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAiwEcAAAABAAAAAAAAAA==",
+              "Title": "IAttendanceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Repositories\\IAttendanceRepository.cs",
+              "RelativeDocumentMoniker": "LmsProject.Domain\\Repositories\\IAttendanceRepository.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Repositories\\IAttendanceRepository.cs",
+              "RelativeToolTip": "LmsProject.Domain\\Repositories\\IAttendanceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T10:05:44.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ICourseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Repositories\\ICourseRepository.cs",
-              "RelativeDocumentMoniker": "LmsProject.Domain\\Repositories\\ICourseRepository.cs",
-              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Repositories\\ICourseRepository.cs",
-              "RelativeToolTip": "LmsProject.Domain\\Repositories\\ICourseRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAswA8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T09:47:39.208Z",
+              "WhenOpened": "2026-09-13T07:03:00.109Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "ICourseService.cs",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\ICourseService.cs",
-              "RelativeDocumentMoniker": "LmsProject.Application\\Services\\ICourseService.cs",
-              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\ICourseService.cs",
-              "RelativeToolTip": "LmsProject.Application\\Services\\ICourseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Title": "AttendanceSessionDto.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\DTOs\\AttendanceSessionDto.cs",
+              "RelativeDocumentMoniker": "LmsProject.Application\\DTOs\\AttendanceSessionDto.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\DTOs\\AttendanceSessionDto.cs",
+              "RelativeToolTip": "LmsProject.Application\\DTOs\\AttendanceSessionDto.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwBUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T10:03:57.218Z",
+              "WhenOpened": "2026-09-13T07:02:12.008Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "CourseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Repositories\\CourseRepository.cs",
-              "RelativeDocumentMoniker": "LmsProject.Infrastructure\\Repositories\\CourseRepository.cs",
-              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Repositories\\CourseRepository.cs",
-              "RelativeToolTip": "LmsProject.Infrastructure\\Repositories\\CourseRepository.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAiwE0AAAABAAAAAAAAAA==",
+              "Title": "20260913070018_AddAttendanceTracking.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Persitence\\Migrations\\20260913070018_AddAttendanceTracking.cs",
+              "RelativeDocumentMoniker": "LmsProject.Infrastructure\\Persitence\\Migrations\\20260913070018_AddAttendanceTracking.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Persitence\\Migrations\\20260913070018_AddAttendanceTracking.cs",
+              "RelativeToolTip": "LmsProject.Infrastructure\\Persitence\\Migrations\\20260913070018_AddAttendanceTracking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T10:45:32.914Z",
+              "WhenOpened": "2026-09-13T07:00:19.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "QuizViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Models\\QuizViewModels.cs",
+              "RelativeDocumentMoniker": "LmsProject.Web\\Models\\QuizViewModels.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Models\\QuizViewModels.cs",
+              "RelativeToolTip": "LmsProject.Web\\Models\\QuizViewModels.cs",
+              "ViewState": "AgIAAEMAAABAmJmZmZkhwEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T20:44:57.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Take.cshtml",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Quiz\\Take.cshtml",
+              "RelativeDocumentMoniker": "LmsProject.Web\\Views\\Quiz\\Take.cshtml",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Quiz\\Take.cshtml",
+              "RelativeToolTip": "LmsProject.Web\\Views\\Quiz\\Take.cshtml",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAIwJIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-12T20:57:46.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Result.cshtml",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Quiz\\Result.cshtml",
+              "RelativeDocumentMoniker": "LmsProject.Web\\Views\\Quiz\\Result.cshtml",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Quiz\\Result.cshtml",
+              "RelativeToolTip": "LmsProject.Web\\Views\\Quiz\\Result.cshtml",
+              "ViewState": "AgIAADMAAACAdmZmZmYkwEQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-12T20:58:17.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\Course.cs",
+              "RelativeDocumentMoniker": "LmsProject.Domain\\Entities\\Course.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\Course.cs",
+              "RelativeToolTip": "LmsProject.Domain\\Entities\\Course.cs",
+              "ViewState": "AgIAAAYAAACgzMzMzMwrwBgAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T09:36:14.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\UserProfile.cs",
+              "RelativeDocumentMoniker": "LmsProject.Domain\\Entities\\UserProfile.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\UserProfile.cs",
+              "RelativeToolTip": "LmsProject.Domain\\Entities\\UserProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T11:56:23.08Z",
               "EditorCaption": ""
             },
             {
@@ -396,14 +553,318 @@
               "RelativeDocumentMoniker": "LmsProject.Infrastructure\\Persistence\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Persistence\\ApplicationDbContext.cs",
               "RelativeToolTip": "LmsProject.Infrastructure\\Persistence\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAIwFQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-10T10:28:05.598Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
+              "Title": "AttendanceRecord.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\AttendanceRecord.cs",
+              "RelativeDocumentMoniker": "LmsProject.Domain\\Entities\\AttendanceRecord.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\AttendanceRecord.cs",
+              "RelativeToolTip": "LmsProject.Domain\\Entities\\AttendanceRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T06:55:30.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "QuizRepository.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Repositories\\QuizRepository.cs",
+              "RelativeDocumentMoniker": "LmsProject.Infrastructure\\Repositories\\QuizRepository.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Repositories\\QuizRepository.cs",
+              "RelativeToolTip": "LmsProject.Infrastructure\\Repositories\\QuizRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAWwAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T20:42:24.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "QuizController.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Controllers\\QuizController.cs",
+              "RelativeDocumentMoniker": "LmsProject.Web\\Controllers\\QuizController.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Controllers\\QuizController.cs",
+              "RelativeToolTip": "LmsProject.Web\\Controllers\\QuizController.cs",
+              "ViewState": "AgIAAHgAAADAMjMzMzMgwJEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T20:51:34.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "LmsProject.Web\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "LmsProject.Web\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAD4AAAAAZM3MzMz8v04AAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T12:18:21.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AddQuiz.cshtml",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Instructor\\AddQuiz.cshtml",
+              "RelativeDocumentMoniker": "LmsProject.Web\\Views\\Instructor\\AddQuiz.cshtml",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Instructor\\AddQuiz.cshtml",
+              "RelativeToolTip": "LmsProject.Web\\Views\\Instructor\\AddQuiz.cshtml",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAIwKAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-12T20:55:45.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Info.cshtml",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Quiz\\Info.cshtml",
+              "RelativeDocumentMoniker": "LmsProject.Web\\Views\\Quiz\\Info.cshtml",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Quiz\\Info.cshtml",
+              "RelativeToolTip": "LmsProject.Web\\Views\\Quiz\\Info.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAIwDgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-12T20:57:09.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "QuizService.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\QuizService.cs",
+              "RelativeDocumentMoniker": "LmsProject.Application\\Services\\QuizService.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\QuizService.cs",
+              "RelativeToolTip": "LmsProject.Application\\Services\\QuizService.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAADwv0UAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T20:43:55.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IQuizService.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\IQuizService.cs",
+              "RelativeDocumentMoniker": "LmsProject.Application\\Services\\IQuizService.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\IQuizService.cs",
+              "RelativeToolTip": "LmsProject.Application\\Services\\IQuizService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T20:36:20.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IQuizRepository.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Repositories\\IQuizRepository.cs",
+              "RelativeDocumentMoniker": "LmsProject.Domain\\Repositories\\IQuizRepository.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Repositories\\IQuizRepository.cs",
+              "RelativeToolTip": "LmsProject.Domain\\Repositories\\IQuizRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T20:35:32.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "20260912203743_AddQuizSystem.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Persitence\\Migrations\\20260912203743_AddQuizSystem.cs",
+              "RelativeDocumentMoniker": "LmsProject.Infrastructure\\Persitence\\Migrations\\20260912203743_AddQuizSystem.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Persitence\\Migrations\\20260912203743_AddQuizSystem.cs",
+              "RelativeToolTip": "LmsProject.Infrastructure\\Persitence\\Migrations\\20260912203743_AddQuizSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T20:37:44.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LmsProject.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj",
+              "RelativeToolTip": "LmsProject.Infrastructure\\LmsProject.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-09-12T20:33:00.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "QuizAttempt.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\QuizAttempt.cs",
+              "RelativeDocumentMoniker": "LmsProject.Domain\\Entities\\QuizAttempt.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\QuizAttempt.cs",
+              "RelativeToolTip": "LmsProject.Domain\\Entities\\QuizAttempt.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T20:31:18.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Question.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\Question.cs",
+              "RelativeDocumentMoniker": "LmsProject.Domain\\Entities\\Question.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\Question.cs",
+              "RelativeToolTip": "LmsProject.Domain\\Entities\\Question.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T20:30:28.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Quiz.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\Quiz.cs",
+              "RelativeDocumentMoniker": "LmsProject.Domain\\Entities\\Quiz.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\Quiz.cs",
+              "RelativeToolTip": "LmsProject.Domain\\Entities\\Quiz.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T20:29:01.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IInstructorService.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\IInstructorService.cs",
+              "RelativeDocumentMoniker": "LmsProject.Application\\Services\\IInstructorService.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\IInstructorService.cs",
+              "RelativeToolTip": "LmsProject.Application\\Services\\IInstructorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T10:04:37.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ViewCourses.cshtml",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Course\\ViewCourses.cshtml",
+              "RelativeDocumentMoniker": "LmsProject.Web\\Views\\Course\\ViewCourses.cshtml",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Course\\ViewCourses.cshtml",
+              "RelativeToolTip": "LmsProject.Web\\Views\\Course\\ViewCourses.cshtml",
+              "ViewState": "AgIAALEAAAAAAAAAAAAcwMUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-10T12:05:47.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "20260912192858_AddEnrollmentFeatures.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Persitence\\Migrations\\20260912192858_AddEnrollmentFeatures.cs",
+              "RelativeDocumentMoniker": "LmsProject.Infrastructure\\Persitence\\Migrations\\20260912192858_AddEnrollmentFeatures.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Persitence\\Migrations\\20260912192858_AddEnrollmentFeatures.cs",
+              "RelativeToolTip": "LmsProject.Infrastructure\\Persitence\\Migrations\\20260912192858_AddEnrollmentFeatures.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T19:28:58.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CreateCourse.cshtml",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Instructor\\CreateCourse.cshtml",
+              "RelativeDocumentMoniker": "LmsProject.Web\\Views\\Instructor\\CreateCourse.cshtml",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Instructor\\CreateCourse.cshtml",
+              "RelativeToolTip": "LmsProject.Web\\Views\\Instructor\\CreateCourse.cshtml",
+              "ViewState": "AgIAAJwAAABQMzMzMzMwwLEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-10T19:36:10.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Instructor.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\Instructor.cs",
+              "RelativeDocumentMoniker": "LmsProject.Domain\\Entities\\Instructor.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\Instructor.cs",
+              "RelativeToolTip": "LmsProject.Domain\\Entities\\Instructor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T06:12:21.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "EditCourse.cshtml",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Instructor\\EditCourse.cshtml",
+              "RelativeDocumentMoniker": "LmsProject.Web\\Views\\Instructor\\EditCourse.cshtml",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Instructor\\EditCourse.cshtml",
+              "RelativeToolTip": "LmsProject.Web\\Views\\Instructor\\EditCourse.cshtml",
+              "ViewState": "AgIAAKMBAAAAAAAAAAAIwLYBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-11T05:21:53.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "LmsProject.Web\\Controllers\\CourseController.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "LmsProject.Web\\Controllers\\CourseController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAiwFEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T12:03:50.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "InstructorService.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\InstructorService.cs",
+              "RelativeDocumentMoniker": "LmsProject.Application\\Services\\InstructorService.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\InstructorService.cs",
+              "RelativeToolTip": "LmsProject.Application\\Services\\InstructorService.cs",
+              "ViewState": "AgIAAFUAAAAAz8zMzMwQwHIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T10:06:43.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "CourseService.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\CourseService.cs",
+              "RelativeDocumentMoniker": "LmsProject.Application\\Services\\CourseService.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\CourseService.cs",
+              "RelativeToolTip": "LmsProject.Application\\Services\\CourseService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAiwEcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T10:05:44.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ICourseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Repositories\\ICourseRepository.cs",
+              "RelativeDocumentMoniker": "LmsProject.Domain\\Repositories\\ICourseRepository.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Repositories\\ICourseRepository.cs",
+              "RelativeToolTip": "LmsProject.Domain\\Repositories\\ICourseRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAswA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T09:47:39.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ICourseService.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\ICourseService.cs",
+              "RelativeDocumentMoniker": "LmsProject.Application\\Services\\ICourseService.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\Services\\ICourseService.cs",
+              "RelativeToolTip": "LmsProject.Application\\Services\\ICourseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T10:03:57.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
               "Title": "CourseViewModel.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Models\\CourseViewModel.cs",
               "RelativeDocumentMoniker": "LmsProject.Web\\Models\\CourseViewModel.cs",
@@ -411,38 +872,11 @@
               "RelativeToolTip": "LmsProject.Web\\Models\\CourseViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T12:07:31.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-10T12:07:31.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UserProfile.cs",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\UserProfile.cs",
-              "RelativeDocumentMoniker": "LmsProject.Domain\\Entities\\UserProfile.cs",
-              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\UserProfile.cs",
-              "RelativeToolTip": "LmsProject.Domain\\Entities\\UserProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T11:56:23.08Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\Course.cs",
-              "RelativeDocumentMoniker": "LmsProject.Domain\\Entities\\Course.cs",
-              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\Course.cs",
-              "RelativeToolTip": "LmsProject.Domain\\Entities\\Course.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T09:36:14.65Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 44,
               "Title": "20260912175444_AddCourseImage.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Persitence\\Migrations\\20260912175444_AddCourseImage.cs",
               "RelativeDocumentMoniker": "LmsProject.Infrastructure\\Persitence\\Migrations\\20260912175444_AddCourseImage.cs",
@@ -454,7 +888,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 45,
               "Title": "LmsProject.Application.csproj",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\LmsProject.Application.csproj",
               "RelativeDocumentMoniker": "LmsProject.Application\\LmsProject.Application.csproj",
@@ -466,7 +900,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 46,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "LmsProject.Web\\Views\\Shared\\_Layout.cshtml",
@@ -478,7 +912,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 47,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "LmsProject.Web\\Views\\_ViewImports.cshtml",
@@ -490,7 +924,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 48,
               "Title": "DataSeeder.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\DataSeeder.cs",
               "RelativeDocumentMoniker": "LmsProject.Web\\DataSeeder.cs",
@@ -502,7 +936,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 49,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "LmsProject.Web\\Views\\Home\\Index.cshtml",
@@ -514,7 +948,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 43,
               "Title": "String.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\AppData\\Local\\Temp\\MetadataAsSource\\504e9a7471474c83a340fc60c41b6f6a\\DecompilationMetadataAsSourceFileProvider\\60eafba60f674925942d53d218601b11\\String.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\MetadataAsSource\\504e9a7471474c83a340fc60c41b6f6a\\DecompilationMetadataAsSourceFileProvider\\60eafba60f674925942d53d218601b11\\String.cs",
@@ -527,7 +961,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 50,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "LmsProject.Web\\Views\\_ViewStart.cshtml",
@@ -539,7 +973,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 51,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "LmsProject.Web\\Controllers\\HomeController.cs",
@@ -551,19 +985,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "LmsProject.Web\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "LmsProject.Web\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T12:18:21.324Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 52,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\appsettings.json",
               "RelativeDocumentMoniker": "LmsProject.Web\\appsettings.json",
@@ -575,7 +997,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 53,
               "Title": "SystemUsers.cshtml",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\User\\SystemUsers.cshtml",
               "RelativeDocumentMoniker": "LmsProject.Web\\Views\\User\\SystemUsers.cshtml",
@@ -587,7 +1009,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 54,
               "Title": "_UserTablePartial.cshtml",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\User\\_UserTablePartial.cshtml",
               "RelativeDocumentMoniker": "LmsProject.Web\\Views\\User\\_UserTablePartial.cshtml",
@@ -599,19 +1021,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Instructor\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "LmsProject.Web\\Views\\Instructor\\Dashboard.cshtml",
-              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Instructor\\Dashboard.cshtml",
-              "RelativeToolTip": "LmsProject.Web\\Views\\Instructor\\Dashboard.cshtml",
-              "ViewState": "AgIAADwAAAAAAAAAAAAgwE4AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-10T12:21:21.608Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 55,
               "Title": "UserManagementViewModel.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Models\\UserManagementViewModel.cs",
               "RelativeDocumentMoniker": "LmsProject.Web\\Models\\UserManagementViewModel.cs",
@@ -623,7 +1033,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 56,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "LmsProject.Web\\Views\\Account\\Login.cshtml",
@@ -635,7 +1045,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 57,
               "Title": "AccountViewModels.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Models\\AccountViewModels.cs",
               "RelativeDocumentMoniker": "LmsProject.Web\\Models\\AccountViewModels.cs",
@@ -647,7 +1057,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 58,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "LmsProject.Web\\Controllers\\UserController.cs",
@@ -659,7 +1069,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 59,
               "Title": "20260612124005_AddUserProfileTable.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Persitence\\Migrations\\20260612124005_AddUserProfileTable.cs",
               "RelativeDocumentMoniker": "LmsProject.Infrastructure\\Persitence\\Migrations\\20260612124005_AddUserProfileTable.cs",
@@ -671,7 +1081,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 60,
               "Title": "IInstructorRepository.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Repositories\\IInstructorRepository.cs",
               "RelativeDocumentMoniker": "LmsProject.Domain\\Repositories\\IInstructorRepository.cs",
@@ -683,19 +1093,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "InstructorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Repositories\\InstructorRepository.cs",
-              "RelativeDocumentMoniker": "LmsProject.Infrastructure\\Repositories\\InstructorRepository.cs",
-              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Repositories\\InstructorRepository.cs",
-              "RelativeToolTip": "LmsProject.Infrastructure\\Repositories\\InstructorRepository.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAuwC0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T10:46:07.068Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 61,
               "Title": "20260612061840_AddIdentityLinkToInstructor.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Persitence\\Migrations\\20260612061840_AddIdentityLinkToInstructor.cs",
               "RelativeDocumentMoniker": "LmsProject.Infrastructure\\Persitence\\Migrations\\20260612061840_AddIdentityLinkToInstructor.cs",
@@ -707,7 +1105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 62,
               "Title": "AccessDenied.cshtml",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Account\\AccessDenied.cshtml",
               "RelativeDocumentMoniker": "LmsProject.Web\\Views\\Account\\AccessDenied.cshtml",
@@ -719,19 +1117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "Instructor.cs",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\Instructor.cs",
-              "RelativeDocumentMoniker": "LmsProject.Domain\\Entities\\Instructor.cs",
-              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\Instructor.cs",
-              "RelativeToolTip": "LmsProject.Domain\\Entities\\Instructor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T06:12:21.324Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 63,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "LmsProject.Web\\Views\\Account\\Register.cshtml",
@@ -743,7 +1129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 64,
               "Title": "20260611120038_AddIdentityRoleSupport.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Persitence\\Migrations\\20260611120038_AddIdentityRoleSupport.cs",
               "RelativeDocumentMoniker": "LmsProject.Infrastructure\\Persitence\\Migrations\\20260611120038_AddIdentityRoleSupport.cs",
@@ -755,19 +1141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Program.cs",
-              "RelativeDocumentMoniker": "LmsProject.Web\\Program.cs",
-              "ToolTip": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Program.cs",
-              "RelativeToolTip": "LmsProject.Web\\Program.cs",
-              "ViewState": "AgIAADYAAACwMjMzMzMrwFAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T10:34:56.423Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 65,
               "Title": "SyllabusItemDto.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Application\\DTOs\\SyllabusItemDto.cs",
               "RelativeDocumentMoniker": "LmsProject.Application\\DTOs\\SyllabusItemDto.cs",
@@ -779,7 +1153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 66,
               "Title": "SyllabusRepository.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Repositories\\SyllabusRepository.cs",
               "RelativeDocumentMoniker": "LmsProject.Infrastructure\\Repositories\\SyllabusRepository.cs",
@@ -791,7 +1165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 67,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "LmsProject.Web\\Models\\ErrorViewModel.cs",
@@ -803,7 +1177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 68,
               "Title": "20260610112452_initialMigration.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Infrastructure\\Persitence\\Migrations\\20260610112452_initialMigration.cs",
               "RelativeDocumentMoniker": "LmsProject.Infrastructure\\Persitence\\Migrations\\20260610112452_initialMigration.cs",
@@ -815,7 +1189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 69,
               "Title": "LmsProject.Web.csproj",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Web\\LmsProject.Web.csproj",
               "RelativeDocumentMoniker": "LmsProject.Web\\LmsProject.Web.csproj",
@@ -827,7 +1201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 70,
               "Title": "ISyllabusRepository.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Repositories\\ISyllabusRepository.cs",
               "RelativeDocumentMoniker": "LmsProject.Domain\\Repositories\\ISyllabusRepository.cs",
@@ -839,7 +1213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 71,
               "Title": "Material.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\Material.cs",
               "RelativeDocumentMoniker": "LmsProject.Domain\\Entities\\Material.cs",
@@ -851,7 +1225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 72,
               "Title": "CourseMaterial.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Downloads\\AcademicUpload\\CSE 4-2\\Software Engineering Project\\LmsProject.Web\\LmsProject.Domain\\Entities\\CourseMaterial.cs",
               "RelativeDocumentMoniker": "LmsProject.Domain\\Entities\\CourseMaterial.cs",

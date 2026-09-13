@@ -1,0 +1,147 @@
+﻿@model LmsProject.Web.Models.TakeQuizViewModel
+
+@{
+    ViewData["Title"] = "Taking Quiz";
+    Layout = null; // Clean layout for focus
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@Model.Title - Assessment</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+            body {
+                background-color: #f8fafc;
+            }
+
+            .timer-bar {
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                background: #212529;
+                color: white;
+                padding: 15px 0;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+
+            .radio-option {
+                cursor: pointer;
+                padding: 12px;
+                border: 1px solid #dee2e6;
+                border-radius: 8px;
+                margin-bottom: 8px;
+                transition: all 0.2s;
+                background: white;
+                display: block;
+            }
+
+                .radio-option:hover {
+                    border-color: #0d6efd;
+                    background-color: #f0f7ff;
+                }
+
+            input[type="radio"]:checked + span {
+                font-weight: bold;
+                color: #0d6efd;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="timer-bar">
+        <div class="container d-flex justify-content-between align-items-center" style="max-width: 800px;">
+            <h5 class="mb-0 fw-bold text-truncate me-3" style="max-width: 60%;">📝 @Model.Title</h5>
+            <div class="d-flex align-items-center gap-2">
+                <span class="small text-uppercase opacity-75">Time Remaining:</span>
+                <h4 class="mb-0 fw-bold text-warning font-monospace" id="countdownTimer">--:--</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5" style="max-width: 800px;">
+        <form method="post" action="@Url.Action("Submit", "Quiz", new { id = Model.QuizId })" id="quizSubmitForm">
+            @Html.AntiForgeryToken()
+
+            @for (int i = 0; i < Model.Questions.Count; i++)
+            {
+                var q = Model.Questions[i];
+                <div class="card shadow-sm border-0 mb-4 rounded-4">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h6 class="text-muted fw-bold mb-0">Question @(i + 1) of @Model.Questions.Count</h6>
+                            <span class="badge bg-light text-dark border">@q.MarkValue Marks</span>
+                        </div>
+                        <h5 class="fw-bold text-dark mb-4" style="line-height: 1.6;">@q.Text</h5>
+
+                        <!-- Options -->
+                        <label class="radio-option">
+                            <input type="radio" name="q_@q.QuestionId" value="A" class="me-2 form-check-input" required>
+                            <span>@q.OptionA</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q_@q.QuestionId" value="B" class="me-2 form-check-input">
+                            <span>@q.OptionB</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q_@q.QuestionId" value="C" class="me-2 form-check-input">
+                            <span>@q.OptionC</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="q_@q.QuestionId" value="D" class="me-2 form-check-input">
+                            <span>@q.OptionD</span>
+                        </label>
+                    </div>
+                </div>
+            }
+
+            <div class="card shadow-sm border-0 mt-5 bg-white">
+                <div class="card-body p-4 text-center">
+                    <button type="submit" id="submitBtn" class="btn btn-success btn-lg px-5 fw-bold rounded-pill">
+                        Submit Final Answers
+                    </button>
+                    <p class="text-muted small mt-2 mb-0">Ensure all questions are answered before submitting.</p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+            // Set Time Limit in seconds
+            let timeRemaining = @(Model.TimeLimitMinutes * 60);
+            const timerElement = document.getElementById('countdownTimer');
+            const form = document.getElementById('quizSubmitForm');
+
+            function updateTimerDisplay() {
+                let m = Math.floor(timeRemaining / 60);
+                let s = timeRemaining % 60;
+                timerElement.innerText = `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+
+                if (timeRemaining <= 60) {
+                    timerElement.classList.remove('text-warning');
+                    timerElement.classList.add('text-danger');
+                }
+            }
+
+            const countdownInterval = setInterval(() => {
+                timeRemaining--;
+                updateTimerDisplay();
+
+                if (timeRemaining <= 0) {
+                    clearInterval(countdownInterval);
+                    timerElement.innerText = "00:00";
+
+                    // Lock form and auto-submit
+                    document.getElementById('submitBtn').innerText = "Time's Up! Submitting...";
+                    const radios = document.querySelectorAll('input[type="radio"]');
+                    radios.forEach(r => r.removeAttribute('required')); // Prevent HTML5 validation block
+                    form.submit();
+                }
+            }, 1000);
+
+            updateTimerDisplay();
+    </script>
+</body>
+</html>

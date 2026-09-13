@@ -12,105 +12,33 @@
             ? Model.CourseMaterials.ToList()
             : new System.Collections.Generic.List<LmsProject.Domain.Entities.CourseMaterial>();
 
+    var checkQuizzes = Model?.Quizzes != null 
+            ? Model.Quizzes.OrderBy(q => q.AvailableFrom).ToList() 
+            : new System.Collections.Generic.List<LmsProject.Domain.Entities.Quiz>();
+
     var isAuthenticated = User.Identity?.IsAuthenticated ?? false;
     var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 }
 
 <style>
-    .details-container {
-        margin-top: 30px;
-        margin-bottom: 50px;
-    }
-
-    .back-btn {
-        transition: transform 0.2s;
-    }
-
-        .back-btn:hover {
-            transform: translateX(-3px);
-        }
-
-    .sticky-syllabus-pane {
-        position: sticky;
-        top: 95px;
-        max-height: calc(100vh - 140px);
-        overflow-y: auto;
-    }
-
-    .material-lesson-card {
-        transition: background-color 0.2s, border-color 0.2s;
-        border: 1px solid #e2e8f0;
-    }
-
-        .material-lesson-card:hover {
-            background-color: #f8fafc;
-            border-color: #cbd5e1;
-        }
-
-    .video-thumbnail-box {
-        width: 120px;
-        height: 68px;
-        background-color: #000000;
-        border-radius: 6px;
-        overflow: hidden;
-        position: relative;
-        flex-shrink: 0;
-    }
-
-        .video-thumbnail-box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.85;
-            transition: opacity 0.2s;
-        }
-
-    .material-lesson-card:hover .video-thumbnail-box img {
-        opacity: 1;
-    }
-
-    .play-overlay-icon {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: rgba(220, 53, 69, 0.9);
-        color: #ffffff;
-        border-radius: 50%;
-        width: 28px;
-        height: 28px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 0.75rem;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    }
+    .details-container { margin-top: 30px; margin-bottom: 50px; }
+    .back-btn { transition: transform 0.2s; }
+    .back-btn:hover { transform: translateX(-3px); }
+    .sticky-syllabus-pane { position: sticky; top: 95px; max-height: calc(100vh - 140px); overflow-y: auto; }
+    .material-lesson-card, .quiz-card { transition: background-color 0.2s, border-color 0.2s; border: 1px solid #e2e8f0; }
+    .material-lesson-card:hover, .quiz-card:hover { background-color: #f8fafc; border-color: #cbd5e1; }
+    .video-thumbnail-box { width: 120px; height: 68px; background-color: #000000; border-radius: 6px; overflow: hidden; position: relative; flex-shrink: 0; }
+    .video-thumbnail-box img { width: 100%; height: 100%; object-fit: cover; opacity: 0.85; transition: opacity 0.2s; }
+    .material-lesson-card:hover .video-thumbnail-box img { opacity: 1; }
+    .play-overlay-icon { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(220, 53, 69, 0.9); color: #ffffff; border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
 </style>
 
 @functions {
     public string GetYouTubeVideoId(string url)
     {
         if (string.IsNullOrEmpty(url)) return string.Empty;
-        if (url.Contains("v="))
-        {
-            var parts = url.Split(new[] { "v=" }, StringSplitOptions.None);
-            if (parts.Length > 1)
-            {
-                var idPart = parts[1];
-                int ampIndex = idPart.IndexOf("&");
-                return ampIndex != -1 ? idPart.Substring(0, ampIndex) : idPart;
-            }
-        }
-        if (url.Contains("youtu.be/"))
-        {
-            var parts = url.Split(new[] { "youtu.be/" }, StringSplitOptions.None);
-            if (parts.Length > 1)
-            {
-                var idPart = parts[1];
-                int qIndex = idPart.IndexOf("?");
-                return qIndex != -1 ? idPart.Substring(0, qIndex) : idPart;
-            }
-        }
+        if (url.Contains("v=")) { var p = url.Split(new[] { "v=" }, StringSplitOptions.None); if (p.Length > 1) { int a = p[1].IndexOf("&"); return a != -1 ? p[1].Substring(0, a) : p[1]; } }
+        if (url.Contains("youtu.be/")) { var p = url.Split(new[] { "youtu.be/" }, StringSplitOptions.None); if (p.Length > 1) { int q = p[1].IndexOf("?"); return q != -1 ? p[1].Substring(0, q) : p[1]; } }
         return string.Empty;
     }
 }
@@ -127,7 +55,7 @@
             <div class="text-uppercase font-monospace text-primary fw-bold mb-2" style="font-size: 0.8rem; letter-spacing: 0.5px;">
                 ■ @(string.IsNullOrEmpty(Model?.Domain) ? "General" : Model.Domain) Track
             </div>
-
+            
             <h1 class="text-dark mb-4" style="font-size: 2.25rem; font-weight: 800;">@(Model?.Title ?? "Untitled Course")</h1>
 
             @if (!string.IsNullOrEmpty(Model?.ImageUrl))
@@ -142,7 +70,7 @@
                 <div class="card-body d-flex justify-content-between align-items-center p-4">
                     <div>
                         <h6 class="fw-bold mb-1">Enrollment Window</h6>
-                        <small class="text-muted">@Model.EnrollmentStartDate.ToString("MMM dd, yyyy hh:mm tt") — @Model.EnrollmentDeadline.ToString("MMM dd, yyyy hh:mm tt")</small>
+                        <small class="text-muted">@Model.EnrollmentStartDate.ToString("MMM dd, yyyy") — @Model.EnrollmentDeadline.ToString("MMM dd, yyyy")</small>
                     </div>
                     <div style="min-width: 200px;">
                         @{
@@ -179,6 +107,48 @@
                 </div>
             </div>
 
+
+            <!-- NEW: STUDENT ATTENDANCE WIDGET -->
+            @if (isEnrolled)
+            {
+                var currentUserProfile = Model.EnrolledUsers.FirstOrDefault(u => u.IdentityUserId == currentUserId);
+                if (currentUserProfile != null)
+                {
+                    var courseAttendance = Model.AttendanceRecords ?? new List<LmsProject.Domain.Entities.AttendanceRecord>();
+                    var totalCourseClasses = courseAttendance.Select(a => a.Date.Date).Distinct().Count();
+                    var myAttendedClasses = courseAttendance.Count(a => a.UserProfileId == currentUserProfile.Id && a.IsPresent);
+                    double attendancePercentage = totalCourseClasses > 0 ? Math.Round(((double)myAttendedClasses / totalCourseClasses) * 100, 1) : 0;
+
+                    string attBadgeColor = attendancePercentage >= 75 ? "bg-success" : (attendancePercentage >= 50 ? "bg-warning text-dark" : "bg-danger");
+
+                    <div class="card bg-white border border-primary border-opacity-25 shadow-sm mb-4">
+                        <div class="card-body d-flex justify-content-between align-items-center p-3 px-4">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex justify-content-center align-items-center" style="width: 45px; height: 45px;">
+                                    <span class="fs-4">📊</span>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-dark">My Attendance Record</h6>
+                                    <small class="text-muted fw-semibold">
+                                        Present for @myAttendedClasses out of @totalCourseClasses total logged classes
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                @if (totalCourseClasses > 0)
+                                {
+                                    <span class="badge @attBadgeColor fs-6 px-3 py-2 rounded-pill shadow-sm">@attendancePercentage%</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary fs-6 px-3 py-2 rounded-pill shadow-sm">No Classes Yet</span>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+
             <div class="mb-4 pb-3 border-bottom d-flex flex-wrap align-items-center gap-2">
                 <span class="text-muted small fw-semibold me-2">Lead Lecturers:</span>
                 @if (!checkInstructors.Any())
@@ -213,54 +183,89 @@
         </div>
 
         <div class="col-lg-5">
-            <div class="card shadow-sm border p-4 bg-white sticky-syllabus-pane">
-                <h5 class="fw-bold text-dark mb-1 font-monospace">Syllabus Track Flow</h5>
-                <p class="text-muted small fw-semibold pb-3 border-bottom mb-3">Structured Video Sequence</p>
+            <div class="sticky-syllabus-pane">
+                
+                <!-- SYLLABUS TRACK FLOW -->
+                <div class="card shadow-sm border p-4 bg-white mb-4">
+                    <h5 class="fw-bold text-dark mb-1 font-monospace">Syllabus Track Flow</h5>
+                    <p class="text-muted small fw-semibold pb-3 border-bottom mb-3">Structured Video Sequence</p>
 
-                @if (!checkMaterials.Any())
-                {
-                    <div class="alert alert-warning text-center py-4 small text-dark mb-0">
-                        No instructional video material components mapped into this learning track schedule yet.
-                    </div>
-                }
-                else
-                {
-                    <div class="d-flex flex-column gap-3">
-                        @foreach (var cm in checkMaterials.OrderBy(m => m.Position))
-                        {
-                            if (cm?.Material != null)
+                    @if (!checkMaterials.Any())
+                    {
+                        <div class="alert alert-warning text-center py-4 small text-dark mb-0">No instructional video components mapped yet.</div>
+                    }
+                    else
+                    {
+                        <div class="d-flex flex-column gap-3">
+                            @foreach (var cm in checkMaterials.OrderBy(m => m.Position))
                             {
-                                var videoId = GetYouTubeVideoId(cm.Material.YouTubeLink);
-                                var thumbnailUrl = !string.IsNullOrEmpty(videoId)
-                                    ? $"https://img.youtube.com/vi/{videoId}/mqdefault.jpg"
-                                    : "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=120&auto=format&fit=crop&q=60";
+                                if (cm?.Material != null)
+                                {
+                                    var videoId = GetYouTubeVideoId(cm.Material.YouTubeLink);
+                                    var thumbnailUrl = !string.IsNullOrEmpty(videoId) ? $"https://img.youtube.com/vi/{videoId}/mqdefault.jpg" : "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=120&auto=format&fit=crop&q=60";
 
-                                <div class="card p-2 rounded-3 material-lesson-card">
-                                    <div class="d-flex gap-3 align-items-center">
-
-                                        <a href="@cm.Material.YouTubeLink" target="_blank" class="video-thumbnail-box text-decoration-none">
-                                            <img src="@thumbnailUrl" alt="Video cover frame pointer" />
-                                            <div class="play-overlay-icon">▶</div>
-                                        </a>
-
-                                        <div class="overflow-hidden">
-                                            <div class="d-flex align-items-center gap-2 mb-1">
-                                                <span class="badge bg-dark rounded-pill font-monospace" style="font-size: 0.65rem;">STEP #@cm.Position</span>
-                                            </div>
-                                            <h6 class="mb-0 text-dark fw-bold text-truncate" style="font-size: 0.9rem;" title="@cm.Material.Title">
-                                                @cm.Material.Title
-                                            </h6>
-                                            <a href="@cm.Material.YouTubeLink" target="_blank" class="text-danger small text-decoration-none d-inline-block mt-1 fw-semibold" style="font-size: 0.75rem;">
-                                                Open in YouTube ↗
+                                    <div class="card p-2 rounded-3 material-lesson-card">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <a href="@cm.Material.YouTubeLink" target="_blank" class="video-thumbnail-box text-decoration-none">
+                                                <img src="@thumbnailUrl" alt="Video cover" />
+                                                <div class="play-overlay-icon">▶</div>
                                             </a>
+                                            <div class="overflow-hidden">
+                                                <span class="badge bg-dark rounded-pill font-monospace mb-1" style="font-size: 0.65rem;">STEP #@cm.Position</span>
+                                                <h6 class="mb-0 text-dark fw-bold text-truncate" style="font-size: 0.9rem;" title="@cm.Material.Title">@cm.Material.Title</h6>
+                                            </div>
                                         </div>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    }
+                </div>
 
+                <!-- NEW: QUIZ TRACK FLOW -->
+                <div class="card shadow-sm border p-4 bg-white">
+                    <h5 class="fw-bold text-dark mb-1 font-monospace">Quiz Track Flow</h5>
+                    <p class="text-muted small fw-semibold pb-3 border-bottom mb-3">Timed Assessments & Leaderboards</p>
+
+                    @if (!checkQuizzes.Any())
+                    {
+                        <div class="alert alert-secondary text-center py-4 small text-dark mb-0">No quizzes available for this course yet.</div>
+                    }
+                    else
+                    {
+                        <div class="d-flex flex-column gap-3">
+                            @foreach (var quiz in checkQuizzes)
+                            {
+                                <div class="card p-3 rounded-3 quiz-card" style="cursor:pointer;" onclick="location.href='@Url.Action("Info", "Quiz", new { id = quiz.Id })'">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <h6 class="mb-1 text-dark fw-bold">📝 @quiz.Title</h6>
+                                            <small class="text-muted d-block mb-2">@quiz.TimeLimitMinutes Minutes Limit</small>
+                                            
+                                            @{
+                                                var quizOpen = DateTime.UtcNow >= quiz.AvailableFrom && DateTime.UtcNow <= quiz.AvailableTo;
+                                            }
+                                            @if (quizOpen)
+                                            {
+                                                <span class="badge bg-success">Active Now</span>
+                                            }
+                                            else if (DateTime.UtcNow < quiz.AvailableFrom)
+                                            {
+                                                <span class="badge bg-secondary">Opens @quiz.AvailableFrom.ToString("MMM dd")</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge bg-danger opacity-75">Closed</span>
+                                            }
+                                        </div>
+                                        <a href="@Url.Action("Info", "Quiz", new { id = quiz.Id })" class="btn btn-sm btn-outline-primary fw-bold" onclick="event.stopPropagation();">View</a>
                                     </div>
                                 </div>
                             }
-                        }
-                    </div>
-                }
+                        </div>
+                    }
+                </div>
+
             </div>
         </div>
     </div>

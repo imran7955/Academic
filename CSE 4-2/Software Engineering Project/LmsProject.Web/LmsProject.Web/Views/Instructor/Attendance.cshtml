@@ -1,0 +1,150 @@
+﻿@model LmsProject.Application.DTOs.AttendanceSessionDto
+
+@{
+    ViewData["Title"] = "Class Attendance";
+}
+
+<div class="container my-5" style="max-width: 1000px;">
+    <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+        <div>
+            <span class="text-uppercase tracking-wider font-monospace text-primary fw-bold small">■ Roster Management</span>
+            <h3 class="text-dark fw-bold mb-0">@Model.CourseTitle</h3>
+        </div>
+        <a href="@Url.Action("Dashboard", "Instructor")" class="btn btn-outline-secondary fw-bold shadow-sm">← Exit to Hub</a>
+    </div>
+
+    <!-- Date Picker Card -->
+    <div class="card shadow-sm border-0 bg-light mb-4">
+        <div class="card-body d-flex align-items-center justify-content-between p-4">
+            <div>
+                <h6 class="fw-bold text-dark mb-1">Select Class Date</h6>
+                <p class="text-muted small mb-0">Changing the date will automatically load historical records for that day.</p>
+            </div>
+            <div>
+                <input type="date" class="form-control form-control-lg fw-bold shadow-sm" style="min-width: 220px;"
+                       value="@Model.SelectedDate.ToString("yyyy-MM-dd")"
+                       onchange="loadAttendanceForDate(this.value)" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Attendance Roster Form -->
+    <form method="post" action="@Url.Action("SaveAttendance", "Instructor")">
+        @Html.AntiForgeryToken()
+        <input type="hidden" name="courseId" value="@Model.CourseId" />
+        <input type="hidden" name="selectedDate" value="@Model.SelectedDate.ToString("yyyy-MM-dd")" />
+
+        <div class="card shadow-sm border rounded-3 overflow-hidden">
+            <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center p-3">
+                <span class="fw-bold font-monospace">Student Roster (@Model.Students.Count Enrolled)</span>
+
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="toggleAllCheck" onchange="toggleAllCheckboxes(this)" style="cursor:pointer;">
+                    <label class="form-check-label text-white small fw-bold ms-1" for="toggleAllCheck" style="cursor:pointer;">Toggle All Present</label>
+                </div>
+            </div>
+
+            @if (!Model.Students.Any())
+            {
+                <div class="card-body text-center py-5 text-muted">
+                    <h5 class="fw-bold mb-2">No Students Enrolled</h5>
+                    <p class="mb-0">Students must enroll in this course before you can take attendance.</p>
+                </div>
+            }
+            else
+            {
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th class="px-4 py-3 text-muted small" style="width: 80px;">#</th>
+                            <th class="py-3 text-muted small">Student Name</th>
+                            <th class="py-3 text-muted small text-center">Historical Attendance</th>
+                            <th class="px-4 py-3 text-muted small text-end">Is Present?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int serial = 1;
+                        }
+                        @foreach (var student in Model.Students.OrderBy(s => s.FullName))
+                        {
+                            // Calculate historical percentage dynamically
+                            double percentage = Model.TotalClasses > 0
+                                ? Math.Round(((double)student.ClassesAttended / Model.TotalClasses) * 100, 1)
+                                : 0;
+
+                            string badgeColor = percentage >= 75 ? "bg-success" : (percentage >= 50 ? "bg-warning text-dark" : "bg-danger");
+
+                            <tr class="student-row">
+                                <td class="px-4 fw-bold text-muted">@serial</td>
+                                <td class="fw-bold text-dark">
+                                    <label for="chk_@student.UserProfileId" style="cursor:pointer; width:100%;">
+                                        @student.FullName
+                                    </label>
+                                </td>
+                                <td class="text-center">
+                                    <span class="fw-bold text-secondary me-2">@student.ClassesAttended / @Model.TotalClasses</span>
+                                    @if (Model.TotalClasses > 0)
+                                    {
+                                        <span class="badge @badgeColor">@percentage%</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-secondary">N/A</span>
+                                    }
+                                </td>
+                                <td class="px-4 text-end">
+                                    <input type="checkbox" class="form-check-input attendance-checkbox"
+                                           id="chk_@student.UserProfileId"
+                                           name="presentUserIds"
+                                           value="@student.UserProfileId"
+                                    @(student.IsPresent ? "checked" : "")
+                                           style="transform: scale(1.4); cursor:pointer;">
+                                </td>
+                            </tr>
+                            serial++;
+                        }
+                    </tbody>
+                </table>
+            }
+
+            <div class="card-footer bg-white p-4 border-top">
+                <button type="submit" class="btn btn-success btn-lg w-100 fw-bold shadow-sm" @(!Model.Students.Any() ? "disabled" : "")>
+                    💾 Save Attendance for @Model.SelectedDate.ToString("MMM dd, yyyy")
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<style>
+    .student-row:hover {
+        background-color: #f8fafc;
+    }
+</style>
+
+<script>
+    // Reloads the page via GET to fetch the specific records for the picked date
+    function loadAttendanceForDate(dateString) {
+        if (!dateString) return;
+        const courseId = @Model.CourseId;
+        window.location.href = `@Url.Action("Attendance", "Instructor")?courseId=${courseId}&date=${dateString}`;
+    }
+
+    // Flips all checkboxes to match the master toggle switch
+    function toggleAllCheckboxes(masterToggle) {
+        const checkboxes = document.querySelectorAll('.attendance-checkbox');
+        checkboxes.forEach(cb => {
+            cb.checked = masterToggle.checked;
+        });
+    }
+
+    // Utility: Automatically check the master switch if all items load as checked natively
+    document.addEventListener("DOMContentLoaded", function() {
+        const checkboxes = document.querySelectorAll('.attendance-checkbox');
+        if (checkboxes.length > 0) {
+            const allChecked = Array.from(checkboxes).every(cb => cb.checked);
+            document.getElementById('toggleAllCheck').checked = allChecked;
+        }
+    });
+</script>

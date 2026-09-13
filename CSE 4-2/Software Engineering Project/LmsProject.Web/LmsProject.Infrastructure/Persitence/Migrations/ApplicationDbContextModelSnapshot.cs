@@ -52,6 +52,35 @@ namespace LmsProject.Infrastructure.Persitence.Migrations
                     b.ToTable("CourseUserProfile");
                 });
 
+            modelBuilder.Entity("LmsProject.Domain.Entities.AttendanceRecord", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsPresent")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("UserProfileId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("UserProfileId");
+
+                    b.ToTable("AttendanceRecords");
+                });
+
             modelBuilder.Entity("LmsProject.Domain.Entities.Course", b =>
                 {
                     b.Property<int>("Id")
@@ -143,6 +172,114 @@ namespace LmsProject.Infrastructure.Persitence.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Materials");
+                });
+
+            modelBuilder.Entity("LmsProject.Domain.Entities.Question", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CorrectOption")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("MarkValue")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("OptionA")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("OptionB")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("OptionC")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("OptionD")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("QuizId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("QuizId");
+
+                    b.ToTable("Questions");
+                });
+
+            modelBuilder.Entity("LmsProject.Domain.Entities.Quiz", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("AvailableFrom")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("AvailableTo")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TimeLimitMinutes")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("Quizzes");
+                });
+
+            modelBuilder.Entity("LmsProject.Domain.Entities.QuizAttempt", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CompletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("IdentityUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("QuizId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Score")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("QuizId");
+
+                    b.ToTable("QuizAttempts");
                 });
 
             modelBuilder.Entity("LmsProject.Domain.Entities.UserProfile", b =>
@@ -405,6 +542,25 @@ namespace LmsProject.Infrastructure.Persitence.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("LmsProject.Domain.Entities.AttendanceRecord", b =>
+                {
+                    b.HasOne("LmsProject.Domain.Entities.Course", "Course")
+                        .WithMany("AttendanceRecords")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("LmsProject.Domain.Entities.UserProfile", "UserProfile")
+                        .WithMany("AttendanceRecords")
+                        .HasForeignKey("UserProfileId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("UserProfile");
+                });
+
             modelBuilder.Entity("LmsProject.Domain.Entities.CourseMaterial", b =>
                 {
                     b.HasOne("LmsProject.Domain.Entities.Course", "Course")
@@ -422,6 +578,39 @@ namespace LmsProject.Infrastructure.Persitence.Migrations
                     b.Navigation("Course");
 
                     b.Navigation("Material");
+                });
+
+            modelBuilder.Entity("LmsProject.Domain.Entities.Question", b =>
+                {
+                    b.HasOne("LmsProject.Domain.Entities.Quiz", "Quiz")
+                        .WithMany("Questions")
+                        .HasForeignKey("QuizId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Quiz");
+                });
+
+            modelBuilder.Entity("LmsProject.Domain.Entities.Quiz", b =>
+                {
+                    b.HasOne("LmsProject.Domain.Entities.Course", "Course")
+                        .WithMany("Quizzes")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+                });
+
+            modelBuilder.Entity("LmsProject.Domain.Entities.QuizAttempt", b =>
+                {
+                    b.HasOne("LmsProject.Domain.Entities.Quiz", "Quiz")
+                        .WithMany("QuizAttempts")
+                        .HasForeignKey("QuizId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Quiz");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -477,12 +666,28 @@ namespace LmsProject.Infrastructure.Persitence.Migrations
 
             modelBuilder.Entity("LmsProject.Domain.Entities.Course", b =>
                 {
+                    b.Navigation("AttendanceRecords");
+
                     b.Navigation("CourseMaterials");
+
+                    b.Navigation("Quizzes");
                 });
 
             modelBuilder.Entity("LmsProject.Domain.Entities.Material", b =>
                 {
                     b.Navigation("CourseMaterials");
+                });
+
+            modelBuilder.Entity("LmsProject.Domain.Entities.Quiz", b =>
+                {
+                    b.Navigation("Questions");
+
+                    b.Navigation("QuizAttempts");
+                });
+
+            modelBuilder.Entity("LmsProject.Domain.Entities.UserProfile", b =>
+                {
+                    b.Navigation("AttendanceRecords");
                 });
 #pragma warning restore 612, 618
         }
